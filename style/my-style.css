@@ -1,0 +1,148 @@
+/**
+* my-style.css
+*
+* global style for all pages
+*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #1C2541;
+}
+
+header, nav {
+    width: 100%;
+    height: 10%;
+    background-color: #0B132B;
+}
+
+nav {
+    position: relative;
+}
+
+#primary-menu-list, #secondary-menu-list { 
+    display: none;
+}
+
+/* main menu hamburger */
+
+#menu-hamburger {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* position check box clicable area over hamburger to be clicable */
+
+#menu-hamburger-toggler {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 60px;
+    height: 52px;
+    opacity: 0;
+    z-index: 1;
+}
+
+.stick{
+    width: 60px;
+    height: 8px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color:  #2DFDB9;
+}
+
+/* after click hamburger transform into a cross */
+
+#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-1{
+    display: none;
+}
+
+#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-2{
+    transform: rotate(-45deg);
+    margin-top: 20px;
+}
+
+#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-3{
+    transform: rotate(45deg);
+    margin-top: -18px;
+}
+
+/* animation open primary menu */
+
+@keyframes fadeIn {
+    from {
+        opacity:0;
+    }
+    
+    to {
+        opacity:1;
+    }
+  }
+
+/* show primary menu after click hamburger */
+
+#menu-hamburger-toggler:checked ~ #primary-menu-list {
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    display: block;
+    margin: inherit;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    height: auto;
+    background-color: #0B132B;
+    animation: fadeIn 2s;
+}
+/* style text into menu */
+
+#primary-menu-list li {
+    padding: 10px 0;
+}
+
+#primary-menu-list a, #primary-menu-list li:nth-of-type(8) {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#primary-menu-list li:nth-of-type(8) {
+    color: orange;
+}
+
+/* hr to divide main menu to section menu */
+
+.hr-section {
+    display: none;
+}
+
+#section-menu-toggler:checked ~ .hr-section {
+    display: block;
+    border: 5px solid orange;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* section menu */
+
+#section-menu-toggler {
+    display: none;
+}
+
+#section-menu-toggler:checked ~ #secondary-menu-list {
+    display: initial;
+    list-style-type: none;
+    padding: 0;
+    margin: inherit;
+}
+
+
+
+
+
+
+
