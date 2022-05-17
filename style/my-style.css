@@ -12,7 +12,7 @@ html, body {
 
 header, nav {
     width: 100%;
-    height: 10%;
+    height: 70px;
     background-color: #0B132B;
 }
 
@@ -54,16 +54,16 @@ nav {
 
 /* after click hamburger transform into a cross */
 
-#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-1{
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger #stick-1{
     display: none;
 }
 
-#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-2{
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger #stick-2{
     transform: rotate(-45deg);
     margin-top: 20px;
 }
 
-#menu-hamburger-toggler:checked ~ #menu-hamburger #stick-3{
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger #stick-3{
     transform: rotate(45deg);
     margin-top: -18px;
 }
@@ -82,7 +82,7 @@ nav {
 
 /* show primary menu after click hamburger */
 
-#menu-hamburger-toggler:checked ~ #primary-menu-list {
+#menu-hamburger-toggler:checked ~ header nav #primary-menu-list {
     position: absolute;
     top: 65px;
     width: 100%;
@@ -94,6 +94,10 @@ nav {
     height: auto;
     background-color: #0B132B;
     animation: fadeIn 2s;
+}
+
+#menu-hamburger-toggler:checked ~ main {
+    display: none;
 }
 /* style text into menu */
 
@@ -119,7 +123,7 @@ nav {
     display: none;
 }
 
-#section-menu-toggler:checked ~ .hr-section {
+#section-menu-toggler:checked ~ header nav #primary-menu-list .hr-section {
     display: block;
     border: 5px solid orange;
     border-radius: 5px;
@@ -133,12 +137,86 @@ nav {
     display: none;
 }
 
-#section-menu-toggler:checked ~ #secondary-menu-list {
+#section-menu-toggler:checked ~ header nav #primary-menu-list #secondary-menu-list {
     display: initial;
     list-style-type: none;
     padding: 0;
     margin: inherit;
 }
+
+.container-box {
+    width: 90%;
+    background-color: #fcf4d9;
+    box-shadow: 15px 18px 46px -20px #fcf4d9;
+    border-radius: 20px;
+    margin: 10% auto;
+    padding: 10px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.container-box h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0;
+    color: #6b98ce;
+}
+
+#info-box h3 {
+    color: orange;
+}
+
+#info-box p {
+    display: none;    
+}
+
+#info-box-toggler {
+    display: none;
+}
+
+#info-box-toggler:checked ~ main label #info-box h3 {
+    margin-bottom: 20px;
+}
+
+#info-box-toggler:checked ~ main label #info-box p {
+    display: initial;
+    font-size: 1.1em;
+}
+
+/* slideshow - homepage - news */
+
+#slideshow {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.slide-wrapper {
+    animation: slide 15s ease infinite;
+    float: left;
+    width: 100%;
+  }
+  
+.slide {
+    height: 200px;
+    width: 100%;
+}
+
+.slide img {
+      width: 100%;
+      height: 100%;
+}
+
+@keyframes slide {
+    
+  0% {margin-top: 0px;}
+  30% {margin-top: -200px;}
+  60% {margin-top: -400px;}
+} 
 
 
 
