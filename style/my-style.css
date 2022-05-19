@@ -14,6 +14,8 @@ header, nav {
     width: 100%;
     height: 50px;
     background-color: #0B132B;
+    position: fixed;
+    top: 0;
 }
 
 nav {
@@ -73,6 +75,13 @@ nav > label {
     to {
         opacity:1;
     }
+  }
+
+  svg {
+      width: 40px;
+      height: 40px;
+      fill: white;
+     
   }
 
 /* show primary menu after click hamburger */
