@@ -55,7 +55,9 @@ nav>label {
     font-weight: lighter;
     text-decoration: none;
     color: whitesmoke;
+    padding: 20px;
 }
+
 
 #primary-menu-list a:hover {
 
@@ -146,7 +148,7 @@ nav>ul>li {
     text-align: center;
     list-style-type: none;
     padding: 0;
-    height: auto;
+    height: 100vh;
     background-color: #0B132B;
     animation: fadeIn 700ms;
 }
@@ -175,6 +177,8 @@ main {
     justify-content: center;
     align-items: center;
 }
+
+
 
 h1 {
     font-size: 40px;
@@ -230,8 +234,11 @@ p{
 
 .sub-menu>a {
     color: white;
-    
     padding: 3px;
+}
+
+.sub-menu > a:link, a:visited{
+    text-decoration: none;
 }
 
 button {
@@ -400,9 +407,7 @@ footer{
 .footer-content{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     padding: 20px;
 }
 
@@ -410,6 +415,26 @@ footer{
     width: 100%;
     text-align: center;
 }
+
+.footer-bottom > .sub-menu > a:link, a:visited{
+    color: white;
+}
+
+.social-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+.social-footer > a{
+    padding: 20px;
+}
+.social-footer > a:hover{
+    fill: #2DFDB9;   
+    background-color: #2DFDB9;
+}
+
+
 
 
 
