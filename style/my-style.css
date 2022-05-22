@@ -10,6 +10,7 @@ body {
     height: 100%;
     background-color: #1C2541;
     font-family: 'Trebuchet MS', sans-serif;
+    color: white;
 }
 
 /**HEADER*/
@@ -20,6 +21,7 @@ nav {
     background-color: #0B132B;
     position: fixed;
     top: 0;
+    z-index: 2;
 }
 
 nav {
@@ -28,21 +30,19 @@ nav {
     justify-content: space-between;
 }
 
-nav svg {
-    width: 40px;
-    height: 40px;
-    fill: white;
-    padding: 5px;
-    margin-right: 20px;
+nav>a>img {
+    height: 50px;
+    width: 120px;
+    padding-left: 7px;
 }
 
-nav > li > svg{
+nav>li>svg {
     width: 40px;
     height: 40px;
     padding-bottom: 20px;
 }
 
-nav > label {
+nav>label {
     margin-left: 20px;
 }
 
@@ -51,15 +51,27 @@ nav > label {
 /* style text into menu */
 
 #primary-menu-list a {
-    font-weight: bold;
-    font-size: 1.4em;
+    font-size: 18px;
+    font-weight: lighter;
     text-decoration: none;
     color: whitesmoke;
 }
-nav > ul > li:last-child{
+
+#primary-menu-list a:hover {
+
+    text-shadow: 2px 4px 0px black;
+}
+
+#primary-menu-list a.join {
+
+    color: #2DFDB9;
+}
+
+nav>ul>li:last-child {
     padding-top: 40px;
 }
-nav > ul > li{
+
+nav>ul>li {
     padding-bottom: 20px;
 }
 
@@ -75,7 +87,8 @@ nav > ul > li{
 #menu-hamburger-toggler {
     display: none;
 }
-#menu-hamburger:hover{
+
+#menu-hamburger:hover {
     cursor: pointer;
 
 }
@@ -135,7 +148,7 @@ nav > ul > li{
     padding: 0;
     height: auto;
     background-color: #0B132B;
-    animation: fadeIn 1s;
+    animation: fadeIn 700ms;
 }
 
 #menu-hamburger-toggler:checked~main {
@@ -150,7 +163,7 @@ main {
 /** HERO */
 
 .hero {
-    background: url(/img/hero-mobile.jpg);
+    background: url(/img/hero.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -163,69 +176,300 @@ main {
     align-items: center;
 }
 
-h1{
-    font-size: 55px;
+h1 {
+    font-size: 40px;
     text-align: center;
+    text-shadow: 0px 1px 4px black;
 }
 
-.hero > p{
+h2{
+    padding: 10px 20px;
+    text-shadow: 0px 1px 4px black;
+    margin: 0;
+}
+
+h4{
+    font-size: 23px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+p{
+    margin: 0;
+}
+
+.cta{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 20px 0 20px 0;
+}
+
+.hero>p {
     font-size: 30px;
 }
 
 /**sub menu*/
 .sub-menu {
-    z-index: 3;
-    position: absolute;
-    bottom: 6px;
+
+    position: sticky;
+    top: 50px;
     width: 100%;
     text-align: center;
     background-color: #1C2541;
+    font-size: 17px;
+    z-index: 1;
 }
 
 .sub-menu>hr {
-    width: 100%;
+    width: auto;
     color: white;
     border: 1px solid;
 }
 
 .sub-menu>a {
     color: white;
-    font-size: 20px;
+    
     padding: 3px;
 }
 
-/**************** ABOUT SMARTPHONE *****************/
+button {
+   
+    background-color: #2DFDB9;
+    border: none;
+    color: #0B132B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+}
 
-@media screen and (max-width: 600px) {
-    .container-about{
-      background-color: #0B132B;
-      padding: 2% 5%;
-      color:  rgb(255, 255, 255);
-      animation: mymove 5s infinite;
-      border-radius: 2%;
+button:hover{
+    cursor: pointer;
+    background-color: #1C2541;
+    color: #2DFDB9;
+    box-shadow: 0px 1px 4px black;;
+}
+
+/**NEWS*/
+
+.news {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: auto;
+}
+
+.news-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: auto;
+    margin-bottom: 20px;
+    
+}
+
+.news-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.news-card>picture>img {
+    width: 100%;
+}
+
+.news-container {
+    padding: 2px 16px;
+    color: black;
+    background-color: white;
+}
+
+/**TOURNAMNETS*/
+
+#tournament{
+    background-color: #0B132B;
+}
+
+.tourn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.tourn-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    margin: 20px;
+    
+}
+
+.tourn-card:hover{
+    cursor: pointer;
+    color: #2DFDB9;
+}
+
+.tourn-container p{
+    font-size: 10px;
+}
+
+/**JOIN*/
+#join{
+    width: 100%;
+    position: relative;
+}
+
+.join-container{
+    background-image: url('/img/lol.jpeg');
+}
+
+.join-container > p{
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+/**ABOUT*/
+
+
+
+.about-text{
+    color: white;
+    padding: 20px;
+}
+
+/**Gallery*/
+
+#gallery{
+    background: #0b132b;
+}
+#gallery>img{
+    position: absolute;
+    width: 100%;
+}
+.gallery{
+    height: 100px;
+    background-color: #0B132B;
+}
+
+#gallery>video{
+    width: 100%;
+}
+
+/**FOOTER*/
+.footer-svg{
+    width: 50px;
+    margin: auto;
+}
+
+.footer-svg>svg{
+    width: 50px;
+    fill: white;
+}
+footer{
+    height: 20vh;
+}
+
+.footer{
+    position: relative;
+    height: 8%;
+    background: #0b132b;
+}
+
+.footer > svg{
+    
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 5vw;
+    z-index: 0;
+      
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-bottom{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+/**DESKTOP*/
+
+
+@media screen and (min-width: 870px) {
+
+    /**MENU*/
+    #menu-hamburger {
+        display: none;
     }
 
-    @keyframes mymove {
-        25% {box-shadow: 0px 0px 40px #23c58f8e;}
-
-      }
-
-      .container-about:first-child {
-        margin: 20% 3%;
+    nav label {
+        display: none;
     }
 
-    .container-about:nth-child(2) {
-        margin: 0% 3% 0% 3%;
-        background-color: #0B132B;
+    #primary-menu-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: right;
+        width: 100%;
     }
 
-    .container-about h2 {
-        text-align: center;
-        font-size: 35px;
+    #primary-menu-list li {
+        margin: auto 20px;
     }
 
-    .container-about p {
-        text-align: center;
-        font-size: 20px;
+    nav>ul>li:last-child {
+        display: none;
     }
+
+    nav>ul>li {
+        padding-bottom: 0px;
     }
+    h1 {
+        font-size: 60px;
+    }
+
+    /**NEWS*/
+    .news {
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+    }
+
+    .news-card {
+
+        width: 30%;
+
+    }
+
+    /**TOURNAMENTS*/
+    .tourn{
+       
+        flex-direction: row;
+        
+    }
+
+}
