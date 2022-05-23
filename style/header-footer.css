@@ -201,7 +201,7 @@ footer {
     text-align: center;
 }
 
-.footer-bottom>.sub-menu>a:link, a:visited {
+.footer-bottom>a:link, a:visited {
     color: white;
 }
 
