@@ -23,6 +23,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 10px;
 }
 
 nav>a>img {
@@ -151,6 +153,10 @@ nav>ul>li {
 #menu-hamburger-toggler:checked~main {
     display: none;
 }
+#menu-hamburger-toggler:checked ~ main,  #menu-hamburger-toggler:checked ~ footer{
+    display: none;
+}
+
 
 /**FOOTER*/
 .footer-svg {
@@ -218,6 +224,11 @@ footer {
 @media screen and (min-width: 870px) {
 
     /**MENU*/
+
+    nav{
+        flex-direction: row;
+    padding: 10px;
+    }
     #menu-hamburger {
         display: none;
     }
@@ -233,9 +244,7 @@ footer {
         width: 100%;
     }
 
-    #primary-menu-list li {
-        margin: auto 20px;
-    }
+  
 
     nav>ul>li:last-child {
         display: none;
