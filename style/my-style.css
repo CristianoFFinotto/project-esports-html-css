@@ -9,12 +9,14 @@
 /**MAIN*/
 main {
     margin-top: 50px;
+    background-color: #0B132B;
+    scroll-behavior: revert;
 }
 
 /** HERO */
 
 .hero {
-    background: url(../img/hero.jpg);
+    background: url(../img/hero-hp.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -33,26 +35,37 @@ h1 {
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 1px 4px black;
+    animation: fadeIn linear 4s;
 }
 
-h2{
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
     padding: 10px 20px;
     text-shadow: 0px 1px 4px black;
     margin: 0;
 }
 
-h4{
+h4 {
     font-size: 23px;
     padding: 0;
     margin: 0;
-    
+
 }
 
-p{
+p {
     margin: 0;
 }
 
-.cta{
+.cta {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -86,12 +99,12 @@ p{
     padding: 3px;
 }
 
-.sub-menu > a:link, a:visited{
+.sub-menu>a:link, a:visited {
     text-decoration: none;
 }
 
 button {
-   
+
     background-color: #2DFDB9;
     border: none;
     color: #0B132B;
@@ -102,11 +115,12 @@ button {
     font-size: 15px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #1C2541;
     color: #2DFDB9;
-    box-shadow: 0px 1px 4px black;;
+    box-shadow: 0px 1px 4px black;
+    ;
 }
 
 /**NEWS*/
@@ -124,7 +138,7 @@ button:hover{
     transition: 0.3s;
     width: auto;
     margin-bottom: 20px;
-    
+
 }
 
 .news-card:hover {
@@ -143,11 +157,11 @@ button:hover{
 
 /**TOURNAMNETS*/
 
-#tournament{
+#tournament {
     background-color: #0B132B;
 }
 
-.tourn{
+.tourn {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -158,38 +172,38 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.tourn-card{
+.tourn-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     flex-wrap: nowrap;
     margin: 20px;
-    
+
 }
 
-.tourn-card:hover{
+.tourn-card:hover {
     cursor: pointer;
     color: #2DFDB9;
 }
 
-.tourn-container p{
+.tourn-container p {
     font-size: 10px;
 }
 
 /**JOIN*/
-#join{
+#join {
     width: 100%;
     position: relative;
 }
 
-.join-container{
+.join-container {
     background-image: url(../img/lol.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.join-container > p{
+.join-container>p {
     text-align: center;
     width: 100%;
     padding: 20px;
@@ -201,27 +215,32 @@ button:hover{
 
 
 
-.about-text{
+.about-text {
     color: white;
     padding: 20px;
 }
 
 /**Gallery*/
 
-#gallery{
+#gallery {
     background: #0b132b;
+    width: 71%;
+    margin: auto;
 }
-#gallery>img{
+
+#gallery>img {
     position: absolute;
-    width: 100%;
+    width: 71%;
 }
-.gallery{
+
+.gallery {
     height: 15vh;
     background-color: #0B132B;
 }
 
-#gallery>video{
+#gallery>video {
     width: 100%;
+    object-fit: fill;
 }
 
 
@@ -231,7 +250,7 @@ button:hover{
 
 @media screen and (min-width: 870px) {
 
-   
+
     h1 {
         font-size: 60px;
     }
@@ -252,10 +271,10 @@ button:hover{
     }
 
     /**TOURNAMENTS*/
-    .tourn{
-       
+    .tourn {
+
         flex-direction: row;
-        
+
     }
 
 }
