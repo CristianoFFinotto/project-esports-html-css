@@ -4,168 +4,19 @@
 * global style for all pages
 */
 
-html,
-body {
-    width: 100%;
-    height: 100%;
-    background-color: #1C2541;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
-}
 
-/**HEADER*/
-header,
-nav {
-    width: 100%;
-    height: 50px;
-    background-color: #0B132B;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav>a>img {
-    height: 50px;
-    width: 120px;
-    padding-left: 7px;
-}
-
-nav>li>svg {
-    width: 40px;
-    height: 40px;
-    padding-bottom: 20px;
-}
-
-nav>label {
-    margin-left: 20px;
-}
-
-
-
-/* style text into menu */
-
-#primary-menu-list a {
-    font-size: 18px;
-    font-weight: lighter;
-    text-decoration: none;
-    color: whitesmoke;
-    padding: 20px;
-}
-
-
-#primary-menu-list a:hover {
-
-    text-shadow: 2px 4px 0px black;
-}
-
-#primary-menu-list a.join {
-
-    color: #2DFDB9;
-}
-
-nav>ul>li:last-child {
-    padding-top: 40px;
-}
-
-nav>ul>li {
-    padding-bottom: 20px;
-}
-
-
-/**************** HOMEPAGE SMARTPHONE *****************/
-
-#primary-menu-list {
-    display: none;
-}
-
-/* main menu hamburger */
-
-#menu-hamburger-toggler {
-    display: none;
-}
-
-#menu-hamburger:hover {
-    cursor: pointer;
-
-}
-
-.stick {
-    width: 30px;
-    height: 5px;
-    border-radius: 4px;
-    margin-bottom: 8px;
-    background-color: #2DFDB9;
-    transition: all 100ms ease-in-out;
-}
-
-.stick:nth-child(3) {
-    margin-bottom: 0;
-}
-
-/* after click hamburger transform into a cross */
-
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(1) {
-    display: none;
-}
-
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(2) {
-    transform: rotate(-45deg);
-    margin-bottom: 12px;
-}
-
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(3) {
-    transform: rotate(45deg);
-    margin-top: -18px;
-}
-
-/* animation open primary menu */
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-/* show primary menu after click hamburger */
-
-#menu-hamburger-toggler:checked~header nav #primary-menu-list {
-    position: absolute;
-    top: 50px;
-    width: 100%;
-    display: block;
-    margin: inherit;
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    height: 100vh;
-    background-color: #0B132B;
-    animation: fadeIn 700ms;
-}
-
-#menu-hamburger-toggler:checked~main {
-    display: none;
-}
 
 /**MAIN*/
 main {
     margin-top: 50px;
+    background-color: #0B132B;
+    scroll-behavior: revert;
 }
 
 /** HERO */
 
 .hero {
-    background: url(/img/hero.jpg);
+    background: url(../img/hero-hp.jpg);
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -184,26 +35,37 @@ h1 {
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 1px 4px black;
+    animation: fadeIn linear 4s;
 }
 
-h2{
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h2 {
     padding: 10px 20px;
     text-shadow: 0px 1px 4px black;
     margin: 0;
 }
 
-h4{
+h4 {
     font-size: 23px;
     padding: 0;
     margin: 0;
-    
+
 }
 
-p{
+p {
     margin: 0;
 }
 
-.cta{
+.cta {
     width: 100%;
     margin: auto;
     text-align: center;
@@ -237,12 +99,12 @@ p{
     padding: 3px;
 }
 
-.sub-menu > a:link, a:visited{
+.sub-menu>a:link, a:visited {
     text-decoration: none;
 }
 
 button {
-   
+
     background-color: #2DFDB9;
     border: none;
     color: #0B132B;
@@ -253,11 +115,12 @@ button {
     font-size: 15px;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #1C2541;
     color: #2DFDB9;
-    box-shadow: 0px 1px 4px black;;
+    box-shadow: 0px 1px 4px black;
+    ;
 }
 
 /**NEWS*/
@@ -267,7 +130,6 @@ button:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
     margin: auto;
 }
 
@@ -276,7 +138,7 @@ button:hover{
     transition: 0.3s;
     width: auto;
     margin-bottom: 20px;
-    
+
 }
 
 .news-card:hover {
@@ -295,11 +157,11 @@ button:hover{
 
 /**TOURNAMNETS*/
 
-#tournament{
+#tournament {
     background-color: #0B132B;
 }
 
-.tourn{
+.tourn {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -310,36 +172,38 @@ button:hover{
     margin-bottom: 10px;
 }
 
-.tourn-card{
+.tourn-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     flex-wrap: nowrap;
     margin: 20px;
-    
+
 }
 
-.tourn-card:hover{
+.tourn-card:hover {
     cursor: pointer;
     color: #2DFDB9;
 }
 
-.tourn-container p{
+.tourn-container p {
     font-size: 10px;
 }
 
 /**JOIN*/
-#join{
+#join {
     width: 100%;
     position: relative;
 }
 
-.join-container{
-    background-image: url('/img/lol.jpeg');
+.join-container {
+    background-image: url(../img/lol.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.join-container > p{
+.join-container>p {
     text-align: center;
     width: 100%;
     padding: 20px;
@@ -351,91 +215,33 @@ button:hover{
 
 
 
-.about-text{
+.about-text {
     color: white;
     padding: 20px;
 }
 
 /**Gallery*/
 
-#gallery{
+#gallery {
     background: #0b132b;
-}
-#gallery>img{
-    position: absolute;
-    width: 100%;
-}
-.gallery{
-    height: 100px;
-    background-color: #0B132B;
-}
-
-#gallery>video{
-    width: 100%;
-}
-
-/**FOOTER*/
-.footer-svg{
-    width: 50px;
+    width: 71%;
     margin: auto;
 }
 
-.footer-svg>svg{
-    width: 50px;
-    fill: white;
-}
-footer{
-    height: 20vh;
-}
-
-.footer{
-    position: relative;
-    height: 8%;
-    background: #0b132b;
-}
-
-.footer > svg{
-    
+#gallery>img {
     position: absolute;
-    bottom: -1px;
+    width: 71%;
+}
+
+.gallery {
+    height: 15vh;
+    background-color: #0B132B;
+}
+
+#gallery>video {
     width: 100%;
-    height: 5vw;
-    z-index: 0;
-      
+    object-fit: fill;
 }
-
-.footer-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.footer-bottom{
-    width: 100%;
-    text-align: center;
-}
-
-.footer-bottom > .sub-menu > a:link, a:visited{
-    color: white;
-}
-
-.social-footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center
-}
-
-.social-footer > a{
-    padding: 20px;
-}
-.social-footer > a:hover{
-    fill: #2DFDB9;   
-    background-color: #2DFDB9;
-}
-
-
-
 
 
 
@@ -444,33 +250,7 @@ footer{
 
 @media screen and (min-width: 870px) {
 
-    /**MENU*/
-    #menu-hamburger {
-        display: none;
-    }
 
-    nav label {
-        display: none;
-    }
-
-    #primary-menu-list {
-        display: flex;
-        list-style-type: none;
-        justify-content: right;
-        width: 100%;
-    }
-
-    #primary-menu-list li {
-        margin: auto 20px;
-    }
-
-    nav>ul>li:last-child {
-        display: none;
-    }
-
-    nav>ul>li {
-        padding-bottom: 0px;
-    }
     h1 {
         font-size: 60px;
     }
@@ -491,10 +271,10 @@ footer{
     }
 
     /**TOURNAMENTS*/
-    .tourn{
-       
+    .tourn {
+
         flex-direction: row;
-        
+
     }
 
 }
