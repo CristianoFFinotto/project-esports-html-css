@@ -202,8 +202,9 @@ footer {
     text-align: center;
 }
 
-.footer-bottom>a:link, a:visited {
+.footer-content>.link>h2>a:link, a:visited {
     color: white;
+    text-decoration: none;
 }
 
 .social-footer {

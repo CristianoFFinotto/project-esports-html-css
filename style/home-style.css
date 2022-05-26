@@ -25,8 +25,12 @@ main {
     display: flex;
     flex-direction: column;
     color: white;
-    justify-content: center;
+    padding-top: 20%;
     align-items: center;
+}
+
+.hero-logo{
+    width: 30%;
 }
 
 
@@ -254,6 +258,7 @@ button:hover {
     background-image: url(../img/lol.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 40vh;
 }
 
 .home-join-container>p {
@@ -261,16 +266,21 @@ button:hover {
     width: 100%;
     padding: 20px;
     font-size: 20px;
+    margin-top: 20%;
 
 }
 
 /**ABOUT*/
 
-
+#home-about{
+    background-color: #1C2541;
+}
 
 .home-about-text {
     color: white;
     padding: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 /**Gallery*/
@@ -279,6 +289,7 @@ button:hover {
     background: #0b132b;
     width: 71%;
     margin: auto;
+    padding-top: 20px;
 }
 
 #home-gallery>img {
@@ -303,9 +314,19 @@ button:hover {
 
 @media screen and (min-width: 870px) {
 
+    /**Hero*/
+    .home-hero {
+        
+        padding-top: 6%;
+        
+    }
+    
+    .hero-logo{
+        width: 10%;
+    }
 
     h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     /**NEWS*/
@@ -327,7 +348,15 @@ button:hover {
     .home-tourn {
 
         flex-direction: row;
+        width: 25%;
+    }
 
+    /**Join*/
+    .home-join-container>p {
+       
+        margin-top: 6%;
+        font-size: 40px;
+    
     }
 
 }
