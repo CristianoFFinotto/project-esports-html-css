@@ -1,4 +1,8 @@
-h2 {
+main {
+    margin-bottom: 30px;
+}
+
+main h2 {
     margin-top: 55px;
     text-align: center;
     font-size: 40px;
