@@ -1,4 +1,8 @@
-function openCity(teamName) {
+/**
+ * 
+*/
+
+function openTeam(teamName) {
   let i;
   let x = document.getElementsByClassName("team");
   for (i = 0; i < x.length; i++) {
