@@ -73,6 +73,10 @@ nav>ul>li {
     padding-bottom: 20px;
 }
 
+a:hover{
+    color: #2DFDB9;
+}
+
 
 /**************** HOMEPAGE SMARTPHONE *****************/
 
