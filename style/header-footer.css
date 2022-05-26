@@ -170,6 +170,7 @@ nav>ul>li {
 
 footer {
     height: 20vh;
+    background: #1c2541;
 }
 
 .footer {
@@ -193,6 +194,7 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    background: #1c2541;
 }
 
 .footer-bottom {
@@ -207,7 +209,8 @@ footer {
 .social-footer {
     display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
+    background: #1c2541;
 }
 
 .social-footer>a {
