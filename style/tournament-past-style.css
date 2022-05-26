@@ -1,32 +1,26 @@
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    background-color: blue;
+body main {
+    margin-top: 50px;
+    margin-bottom: 50px;
     justify-content: center;
     color: white;
 }
 
-h1 {
+main h1 {
     text-align: center;
+    margin-top: 70px;
 }
 
-.all {
+main .all {
     padding: 10px;
     margin: 0 auto;
-    width: 80%;
+    width: 800px;
     justify-content: center;
 }
 
-.container {
+main .container {
     padding: 20px;
     margin: 10px;
-    width: 300px;
+    width: 350px;
     background-color: rgb(163, 142, 22);
     color: black;
     text-align: center;
@@ -34,31 +28,26 @@ h1 {
     display: inline-block;
 }
 
-.container {
-    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
 
-    transition: 0.5s;
-}
-
-.container:hover {
+main .container:hover {
     box-shadow: none;
     transition: all 0.5s;
 }
 
-img:hover {
+main .container:hover img {
     width: 210px;
     margin: 0px;
-
+    box-shadow: -1px 9px 18px -5px white;
     transition: all 0.5s;
 }
 
-.tournament-1, .tournament-2,
-.tournament-3, .tournament-4 {
-    height: 510px;
+main .tournament-1, main .tournament-2,
+main .tournament-3, main .tournament-4 {
+    height: 600px;
     padding: 20px;
 }
 
-img {
+main img {
     width: 200px;
     transition: 0.5s;
 }
