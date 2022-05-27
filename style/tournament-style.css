@@ -172,7 +172,8 @@ body .section-2 {
     padding: 10px;
     margin: 15px;
     width: 260px;
-    background-color: #2dfdb8bd;
+    /* background-color: #2dfdb8bd; */
+    background: linear-gradient(#2dfdb8bd, #2dfdb8bd, #c2a049);
     color: black
 }
 
