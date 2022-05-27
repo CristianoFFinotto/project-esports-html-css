@@ -11,14 +11,16 @@
         <link rel="stylesheet" href="../style/tournament-style.css">
     </head>
 
-    <body>
 
-        <!-- hamburger menu handler -->
+    <!-- INIZIO DEL BODY -->
+    <body>
         <input type="checkbox" id="menu-hamburger-toggler" />
+
+        <!-- HEADER -->
         <header>
-            <!-- navbar -->
+            <!-- NAVBAR -->
             <nav>
-                <!-- hamburger menu -->
+                <!-- HAMBURGER MENU -->
                 <label for="menu-hamburger-toggler">
                     <div id="menu-hamburger">
                         <div class="stick"></div>
@@ -77,61 +79,360 @@
             </nav>
         </header>
 
+        <!-- MAIN -->
         <main>
-            <!-- TOURNAMENT HEADER -->
-            <div class="tournament-description">
-                <h1 class="tournament-description__title">Tournament</h1>
-                <p class="tournament-description__p">See all the tournament</p>
-            </div>
 
-            <!-- TOURNAMENT BODY -->
+            <!-- PRIMA SEZIONE -->
+            <section class="section-1">
 
-            <div class="tournament container">
-                <!-- PAST -->
-                <div class="container__div">
-                    <picture class="responsive-img">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/torunament-img-1.jpeg">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/torunament-img-1.jpeg">
-                        <source srcset="/img/images-tournament/torunament-img-1.jpeg">
-                        <img src="/img/images-tournament/torunament-img-1.jpeg" alt="Past">
-                    </picture>
-
-                    <div class="container-info">
-                        <a href="#">Past</a>
-                    </div>
+                <div class="tournament-description">
+                    <h1 class="tournament-description__title">Tournament</h1>
+                    <p class="tournament-description__p">See all the tournament</p>
                 </div>
 
-                <!-- PRESENT -->
-                <div class="container__div">
-                    <picture class="responsive-img">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-2.jpeg">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-2.jpeg">
-                        <source srcset="/img/images-tournament/tournament-img-2.jpeg">
-                        <img src="/img/images-tournament/tournament-img-2.jpeg" alt="Present">
-                    </picture>
+                <div class="tournament container">
+                    <!-- PAST -->
+                    <div class="container__div">
+                        <picture class="responsive-img">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/torunament-img-1.jpeg">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/torunament-img-1.jpeg">
+                            <source srcset="/img/images-tournament/torunament-img-1.jpeg">
+                            <img src="/img/images-tournament/torunament-img-1.jpeg" alt="Past">
+                        </picture>
 
-                    <div class="container-info">
-                        <a href="#">Present</a>
+                        <div class="container-info">
+                            <a href="#past">Past</a>
+                        </div>
+                    </div>
+
+                    <!-- PRESENT -->
+                    <div class="container__div">
+                        <picture class="responsive-img">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-2.jpeg">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-2.jpeg">
+                            <source srcset="/img/images-tournament/tournament-img-2.jpeg">
+                            <img src="/img/images-tournament/tournament-img-2.jpeg" alt="Present">
+                        </picture>
+
+                        <div class="container-info">
+                            <a href="#present">Present</a>
+                        </div>
+                    </div>
+
+                    <!-- FUTURE -->
+                    <div class="container__div">
+                        <picture class="responsive-img">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-3.jpeg">
+                            <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-3.jpeg">
+                            <source srcset="/img/images-tournament/tournament-img-3.jpeg">
+                            <img src="/img/images-tournament/tournament-img-3.jpeg" alt="Future">
+                        </picture>
+
+                        <div class="container-info">
+                            <a href="#future">Future</a>
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <!-- FUTURE -->
-                <div class="container__div">
-                    <picture class="responsive-img">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-3.jpeg">
-                        <source media="(min-width: 992px" srcset="/img/images-tournament/tournament-img-3.jpeg">
-                        <source srcset="/img/images-tournament/tournament-img-3.jpeg">
-                        <img src="/img/images-tournament/tournament-img-3.jpeg" alt="Future">
-                    </picture>
+            <!-- SECONDA SEZIONE -->
+            <section class="section-2">
+                <br>
+                <a name="past"></a>
+                
+                <!-- PAST TOURNAMENT -->
+                <div class="past">
+                    <h1>PAST TOURNAMENTS</h1>
 
-                    <div class="container-info">
-                        <a href="#">Future</a>
+                    <div class="all">
+
+                        <!-- CBLOL -->
+                        <div class="container">
+                            <div class="tournament-1">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-1.jpg" alt="">
+                                <h3>CBLOL</h3>
+                                <div class="desc">
+                                    <img class="logo" src="../img/tournament-cblol.png" alt="">
+        
+                                    <p>
+                                        A1000 <br>
+                                        Europe <br>
+                                        23rd March 2020 <br>
+                                        Win: 150.000,00$ <br>
+                                        Entry fee: 100,00$ <br>
+                                    </p>
+                                    <p class="team">
+                                        cloud9 <br>
+                                        Fnatic <br>
+                                        Arizona State <br>
+                                        Angry Bats 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- PICK-EM -->
+                        <div class="container">
+                            <div class="tournament-2">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-8.jpg" alt="">
+                                <h3>Pick-EM</h3>
+                                <div class="desc">
+                                    <img class="logo" src="../img/tournament-em.png" alt="">
+        
+                                    <p>
+                                        B2000 <br>
+                                        Europe <br>
+                                        15th April 2022 <br>
+                                        Win: 1000,00$ <br>
+                                        Entry fee: 50,00$ <br>
+        
+                                        <p class="team">
+                                            DWG KIA <br>
+                                            PSG Talon <br>
+                                            ROUGE <br>
+                                            G2 Esport 
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- LOL KESPA CUP -->
+                        <div class="container">
+                            <div class="tournament-3">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-3.jpg" alt="">
+                                <h3>LoL KeSPA cup</h3>
+                                <div class="desc">
+                                    <img class="logo" src="../img/tournament-korea.png" alt="">
+
+                                    <p>
+                                        C3000 <br>
+                                        Asia <br>
+                                        28th April 2020 <br>
+                                        Win: 500,00$ <br>
+                                        Entry Fee: 25,00$ <br>
+        
+                                        <p class="team">
+                                            cloud9 <br>
+                                            Fnatic <br>
+                                            PSG Talon <br>
+                                            Angry Bats 
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- LEC -->
+                        <div class="container">
+                            <div class="tournament-4">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-4.jpg" alt="">
+                                <h3>LEC</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-lec.png" alt="">
+                                    <p>
+                                        D4000 <br>
+                                        North America <br>
+                                        15th May 2022 <br>
+                                        Win: 100.000,00$ <br>
+                                        Entry Fee: 150,00$ <br>
+        
+                                        <p class="team">
+                                            cloud9 <br>
+                                            Royal Never Give Up <br>
+                                            PSG Talon <br>
+                                            Angry Bats <br>
+                                            DWG KIA <br>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+        
+                <br>
+                <a name="present"></a>
+                <!-- PRESENT TOURNAMENT -->
+                <div class="present">
+                    <h1>PRESENT TOURNAMENTS</h1>
+
+                    <div class="all">
+                        
+                        <!-- MSI -->
+                        <div class="container">
+                            <div class="tournament-1">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-5.jpg" alt="">
+                                <h3>MSI</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-msi.png" alt="">
+                                    <p>
+                                        E5000 <br>
+                                        Europe <br>
+                                        Date: Line Now <br>
+                                        Win: 400.000,00$ <br>
+                                        
+                                        <p class="team">
+                                            G2 Esport <br>
+                                            Royal Never Give Up <br>
+                                            Arizona State <br>
+                                            Angry Bats <br>
+                                            DWG KIA <br>
+                                            ROUGE 
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- PG-NATIONAL -->
+                        <div class="container">
+                            <div class="tournament-2">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-6.jpg" alt="">
+                                <h3>PG-National</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-pgnational.png" alt="">
+                                    <p>
+                                        F6000 <br>
+                                        South America <br>
+                                        Date: Live Now <br>
+                                        Win: 3.000,00$ <br>
+                                        Entry Fee: 100,00$ <br>
+                                        
+                                        <p class="team">
+                                            ROUGE <br>
+                                            PSG Talon <br>
+                                            Arizona State <br>
+                                            Angry Bats
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- All STARS -->
+                        <div class="container">
+                            <div class="tournament-3">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-7.jpg" alt="">
+                                <h3>All Stars</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-all-stars-logo.png" alt="">
+                                    <p>
+                                        G7000 <br>
+                                        Asia <br>
+                                        Date: Today 19:00h <br>
+                                        Win: 1.000,00$ <br>
+                                        Entry Fee: 10,00$ <br>
+                                        
+                                        <p class="team">
+                                            cloud9 <br>
+                                            PSG Talon <br>
+                                            Arizona State <br>
+                                            Angry Bats <br>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <br>
+                <a name="future"></a>
+                <!-- FUTURE TOURNAMENT -->
+                <div class="future">
+                    <h1>FUTURE TOURNAMENTS</h1>
+
+                    <div class="all">
+
+                        <!-- ELITE SERIES -->
+                        <div class="container">
+                            <div class="tournament-1">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-2.jpg" alt="">
+                                <h3>Elite Series</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-elite-series-logo.png" alt="">
+                                    <p>
+                                        H8000 <br>
+                                        Europe <br>
+                                        Date: 20th june 2022 <br>
+                                        Win: 4.000,00$ <br>
+                                        Entry Fee: 75,00$ <br>
+                                        
+                                        <p class="team">
+                                            DWG KIA <br>
+                                            ROUGE <br>
+                                            Arizona State <br>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- NLC -->
+                        <div class="container">
+                            <div class="tournament-2">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-9.webp" alt="">
+                                <h3>NLC</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-nlc-logo.png" alt="">
+                                    <p>
+                                        I9000 <br>
+                                        South America <br>
+                                        Date: 25th June 2022 <br>
+                                        Win: 3.000,00$ <br>
+                                        Entry Fee: 50,00$ <br>
+                                        
+                                        <p class="team">
+                                            G2 Esport <br>
+                                            Fnatic <br>
+                                            DWG KIA <br>
+                                            Angry Bats <br>
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- ULTRA LIGA -->
+                        <div class="container">
+                            <div class="tournament-4">
+                                <img class="photo" src="../img/images-tournament-description/tournament-description-11.jpg" alt="">
+                                <h3>Ultra Liga</h3>
+                                <div class="desc">
+        
+                                    <img class="logo" src="../img/tournament-ultra-liga.png" alt="">
+                                    <p>
+                                        D4000 <br>
+                                        North America <br>
+                                        15th May 2022 <br>
+                                        Win: 100.000,00$ <br>
+                                        Entry Fee: 150,00$ <br>
+                                        
+                                        <p class="team">
+                                            DWG KIA <br>
+                                            Royal Never Give Up <br>
+                                            Arizona State
+                                        </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
-        <!-- Footer-->
+        
+        
+
+        <!-- FOOTER -->
         <footer>
             <div class="footer">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -194,7 +495,7 @@
                 <p>2022 &copy; Designed by Cristiano, Michele, Pietro, Gabriele</p>
             </div>
         </footer>
-        <!-- end of the body -->
 
+        <!-- END OF THE BODY -->
     </body>
 </html>

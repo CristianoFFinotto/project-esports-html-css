@@ -1,12 +1,13 @@
-main {
+/* SECTION 1 */
+main .section-1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 80px 20px 80px 20px;
+    margin: 200px 20px 80px 20px;
     padding: 20px;
 }
 
-main .tournament {
+main .section-1 .tournament {
     height: 500px; 
     width: 1200px;
     margin: 0 auto; 
@@ -16,42 +17,45 @@ main .tournament {
     position: relative;
 }
 
-main .tournament-description {
+
+main .section-1 h1 {
+    margin-left: 150px;
+}
+
+main .section-1 .tournament-description {
     flex: 0 0 25%;
     padding-right: 30px;
+    text-align: right;
 }
 
-main .tournament-description__title {
-    font-family: 'Abril Fatface', cursive;
-    font-size: 40px;
+main .section-1 .tournament-description__title {
     letter-spacing: 1.5px;
     margin: 0;
-    color: wheat;
 }
 
-main .tournament-description__p {
+main .section-1 .tournament-description__p {
     font-size: 17px;
 }
 
-main .container {
+main .section-1 .container {
     display: flex;
     align-items: stretch;
     justify-content: space-between;
 }
 
-main .container__div {
+main .section-1 .container__div {
     flex: 0 0 33.3333333%;
     position: relative;
 }
 
-main .responsive-img img {
+main .section-1 .responsive-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
 
-main .container-info {
+main .section-1 .container-info {
     background-color: rgba(0,0,0, 0.3);
     position: absolute;
     bottom: 0;
@@ -66,9 +70,8 @@ main .container-info {
     transition: all 0.4s;
 }
 
-main a:link,
-main a:visited {
-    font-family: 'Abril Fatface', cursive;
+main .section-1 a:link,
+main .section-1 a:visited {
     font-size: 30px;
     color: #fff;
     text-align: center;
@@ -79,17 +82,17 @@ main a:visited {
     transition: all 0.4s;
 }
 
-main .container__div:hover .container-info {
+main .section-1 .container__div:hover .container-info {
     height: 100%;
-    background-color: rgba(0,0,0, 0.6);
+    background-color: #2dfdb82a;
 }
 
 @media only screen and (max-width: 1200px) {
-    main {
+    main .section-1 {
         flex-wrap: wrap;
     }
 
-    main .tournament-description {
+    main .section-1 .tournament-description {
         flex: 0 0 100%;
         text-align: center;
     }
@@ -97,43 +100,124 @@ main .container__div:hover .container-info {
 }
 
 @media only screen and (max-width: 991px) {
-    main .tournament-description  {
+    main .section-1 .tournament-description  {
         margin-bottom: 30px;
     }
 
-    main .container  {
+    main .section-1 .container  {
         height: 900px;
         flex-wrap: wrap;
     }
 
-    main .container__div {
+    main .section-1 .container__div {
         flex: 0 0 100%;
         height: 33.33333%;
     }
 
-    main .responsive-img img {
+    main .section-1 .responsive-img img {
         height: 100%;
     }
 
-    main .container__div:nth-of-type(2) img {
+    main .section-1 .container__div:nth-of-type(2) img {
         object-position: 50% 70%;
     }
 
-    main .container-info {
+    main .section-1 .container-info {
         height: 20%
     }
 }
 
 @media only screen and (max-width: 767px) {
-    main .container__div:nth-of-type(1) img {
+    main .section-1 .tournament-description  {
+        margin-bottom: 30px;
+        margin-top: -120px;
+    }
+
+    main .section-1 .container__div:nth-of-type(1) img {
         object-position: 50% 75%;
     }
 
-    main .container__div:nth-of-type(3) img {
+    main .section-1 .container__div:nth-of-type(3) img {
         object-position: 50% 60%;
     }    
 
-    main .container-info__title {
+    main .section-1 .container-info__title {
         font-size: 25px;
-    }    
+    } 
+}
+
+
+/* SECTION 2 */
+body .section-2 {
+    margin-top: 200px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.section-2 h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.section-2 .all {
+    padding: 10px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-2 .container {
+    padding: 10px;
+    margin: 15px;
+    width: 260px;
+    background-color: #2dfdb8bd;
+    color: black
+}
+
+.section-2 .container {
+    box-shadow: none;
+    transition: 0.5s;
+}
+
+.section-2 .container:hover {
+    box-shadow: 0px 9px 19px -5px rgba(251, 250, 242, 0.685);
+    transition: all 0.5s;
+}
+
+.section-2 .photo {
+    width: 200px;
+    margin: auto;
+    transition: 0.5s; 
+}
+
+.section-2 .container:hover .photo {
+    width: 205px;
+    transition: all 0.5s;
+}
+
+.section-2 .tournament-1, .section-2 .tournament-2,
+.section-2 .tournament-3, .section-2 .tournament-4 {
+    height: 700px;
+    padding: 20px;
+}
+
+.section-2 .desc {
+    justify-content: center;
+    text-align: center;
+}
+
+.section-2 h3 {
+    text-align: center;
+}
+
+.team {
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+    main .section-2 {
+        margin-top: -100px;
+    }
 }
