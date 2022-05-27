@@ -58,6 +58,7 @@ nav>label {
 #primary-menu-list a:hover {
 
     text-shadow: 2px 4px 0px black;
+    color: #2DFDB9;
 }
 
 #primary-menu-list a.join {
@@ -72,6 +73,8 @@ nav>ul>li:last-child {
 nav>ul>li {
     padding-bottom: 20px;
 }
+
+
 
 
 /**************** HOMEPAGE SMARTPHONE *****************/
@@ -197,6 +200,8 @@ footer {
     background: #1c2541;
 }
 
+
+
 .footer-bottom {
     width: 100%;
     text-align: center;
@@ -205,6 +210,10 @@ footer {
 .footer-content>.link>h2>a:link, a:visited {
     color: white;
     text-decoration: none;
+}
+
+.footer-content>.link>h2>a:hover{
+    color: #2DFDB9;
 }
 
 .social-footer {
