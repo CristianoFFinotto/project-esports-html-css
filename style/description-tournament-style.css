@@ -1,7 +1,6 @@
 body main {
     margin-top: 50px;
     margin-bottom: 50px;
-    justify-content: center;
     color: white;
 }
 
@@ -12,32 +11,39 @@ main h1 {
 
 main .all {
     padding: 10px;
-    margin: 10px;
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 main .container {
-    padding: 20px;
-    margin: 10px;
-    width: 350px;
-    background-color: rgb(163, 142, 22);
-    color: black;
-    text-align: center;
-    overflow: hidden;
-    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    width: 260px;
+    background-color: rgb(173, 148, 7);
+    color: black
 }
 
+main .container {
+    box-shadow: none;
+    transition: 0.5s;
+}
 
 main .container:hover {
-    box-shadow: none;
+    box-shadow: 0px 9px 19px -5px rgb(241, 224, 124);
     transition: all 0.5s;
 }
 
+main img {
+    width: 200px;
+    margin: auto;
+    transition: 0.5s; 
+}
+
 main .container:hover img {
-    width: 210px;
-    margin: 0px;
-    box-shadow: -1px 9px 18px -5px white;
+    width: 205px;
     transition: all 0.5s;
 }
 
@@ -45,9 +51,4 @@ main .tournament-1, main .tournament-2,
 main .tournament-3, main .tournament-4 {
     height: 600px;
     padding: 20px;
-}
-
-main img {
-    width: 200px;
-    transition: 0.5s;
 }
