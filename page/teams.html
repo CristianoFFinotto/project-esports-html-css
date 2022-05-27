@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,10 +8,11 @@
         content="Cristiano Francesco Finotto, Pietro Milanese, Gabriele Bovolenta, Michele Davide Aliverti" />
     <meta name="description" content="site about esports" />
     <title>esports-07</title>
-    <link rel="stylesheet" href="./style/NORMALIZE.css" />
-    <link rel="stylesheet" href="./style/header-footer.css" />
-    <link rel="stylesheet" href="./style/home-style.css" />
+    <link rel="stylesheet" href="../style/NORMALIZE.css" />
+    <link rel="stylesheet" href="../style/header-footer.css" />
+    <link rel="stylesheet" href="../style/teams.css" />
 </head>
+
 <body>
     <!-- start of page -->
     <!-- hamburger menu handler -->
@@ -27,28 +29,28 @@
                 </div>
             </label>
             <a href="#" target="_blank" style="fill:white">
-                <img src="./img/logo-desktop.svg"></a>
+                <img src="../img/logo-desktop.svg"></a>
             <ul id="primary-menu-list">
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a href="../index.html">Home</a>
                 </li>
                 <li>
                     <a href="">News</a>
                 </li>
                 <li>
-                    <a href="./page/tournament.html">Tournaments</a>
+                    <a href="./tournament.html">Tournaments</a>
                 </li>
                 <li>
-                    <a href="./page/teams.html">Teams</a>
+                    <a href="./teams.html">Team</a>
                 </li>
                 <li>
-                    <a href="./page/about.html">About</a>
+                    <a href="./about.html">About</a>
                 </li>
                 <li>
-                    <a href="./page/gallery.html">Gallery</a>
+                    <a href="./gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="./page/join-us.html" class="join">JoinUs</a>
+                    <a href="./join-us.html" class="join">JoinUs</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com" target="_blank" style="fill:white"> <svg
@@ -76,149 +78,123 @@
             </ul>
         </nav>
     </header>
-<!-- Main -->
     <main>
-        <div class="home-hero">
-            <img src="./img/logo-hero.svg" class="hero-logo">
-            <h1>LEAGUE OF LEGENDS <br>CHAMPIONSHIP <br>2022 SEASON</h1>
-            <svg class="arrows">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-        </div>
-        <div class="home-sub-menu">
-            <hr />
-            <a href="#home-news">NEWS</a>
-            <a href="#home-tournament">TOURNAMENTS</a>
-            <a href="#home-join">JOIN</a>
-            <a href="#home-about">ABOUT</a>
-            <a href="#home-gallery">GALLERY</a>
-            <hr />
-        </div>
-        <section id="home-news">
-            <h2>NEWS</h2>
-            <div class="home-news">
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/news01.webp">
-                    </picture>
-                    <div class="home-news-container">
-                        <h4>G2 Flakked - Most Impressive MSI Group Stage Player</h4>
-                        <p>Flakked is the player with the best KDA in the groups stage - nearly 17 over 8 matches - and
-                            damage and gold numbers to match his veteran mid lane.</p>
-                        <div class="cta"><button>READ MORE</button></div>
-                    </div>
-                </div>
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/news01.webp">
-                    </picture>
-                    <div class="home-news-container">
-                        <h4>News 01</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet ex beatae fuga
-                            quas,
-                            voluptatum aliquam porro? Consectetur veritatis sit velit incidunt distinctio. Quaerat sint
-                            praesentium impedit officia aliquid ab.</p>
-                        <div class="cta"><button>READ MORE</button></div>
-                    </div>
-                </div>
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/news01.webp">
-                    </picture>
+        <h2>League of Ledgend Teams</h2>
+        <div class="teams-container">
 
-                    <div class="home-news-container">
-                        <h4>News 01</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet ex beatae fuga
-                            quas,
-                            voluptatum aliquam porro? Consectetur veritatis sit velit incidunt distinctio. Quaerat sint
-                            praesentium impedit officia aliquid ab.</p>
-                        <div class="cta"><button>READ MORE</button></div>
-                    </div>
-                </div>
+            <a onclick="openTeam('cloud9')">
+                <img src="../img/teams-cloud.svg" alt="cloud9">
+                
+            </a>
+
+            <a onclick="openTeam('university')">
+                <img src="../img/teams-university.svg" alt="Arizona University">
+
+            </a>
+
+            <a onclick="openTeam('Bat')">
+                <img src="../img/teams-bat.svg" alt="Bat">
+
+
+            </a>
+            </a>
+
+            <a onclick="openTeam('Rouge')">
+                <img src="../img/teams-rouge.svg" alt="Rouge">
+
+
+            </a>
+            <a onclick="openTeam('DWG')">
+                <img src="../img/team-dwg.svg" alt="DWG">
+
+
+            </a>
+            <a onclick="openTeam('PSG')">
+                <img src="../img/team-psg.svg" alt="PSG">
+
+
+            </a>
+            <a onclick="openTeam('Fnatic')">
+                <img src="../img/team-fnatic.svg" alt="Fnatic">
+
+
+            </a>
+            <a onclick="openTeam('Royal')">
+                <img src="../img/teams-royal.svg" alt="Royal">
+
+
+            </a>
+            <a onclick="openTeam('G2')">
+                <img src="../img/teams-g2.svg" alt="G2">
+
+
+            </a>
+
+        </div>
+        <div id="cloud9" class="team">
+            <h3>cloud9</h2>
+                <p>London is the capital of England.</p>
+        </div>
+
+        <div id="university" class="team" style="display:none">
+            <h3>Arizona University</h3>
+            <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Bat" class="team" style="display:none">
+            <h3>Bat team</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="Rouge" class="team" style="display:none">
+            <h3>Rouge</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="DWG" class="team" style="display:none">
+            <h3>DWG</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="PSG" class="team" style="display:none">
+            <h3>PSG</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="Fnatic" class="team" style="display:none">
+            <h3>Fnatic</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="Royal" class="team" style="display:none">
+            <h3>Royal</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+        <div id="G2" class="team" style="display:none">
+            <h3>G2</h3>
+            <p>One of the best rosters that Europe has ever created, this multiple title winning superteam is here to
+                take down titans and change everything you know about League of Legends. You can catch them competing
+                weekly in the League of Legends European Championship (LEC).</p>
+            <div class="player">
+                <a href="#"> <img src="../img/player-g2-01.svg"></a>
+                <div class="player-name allign"><span>Name:</span><span>Sergen Celik</span></div>
+                <div class="player-age allign"><span>Age:</span><span>22</span></div>
+                <div class="player-nickname allign"><span>Nickname:</span><span>broken Blade</span></div>
+                <div class="player-nation allign"><span>Nation:</span><span>Germany</span></div>
+                <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
             </div>
-        </section>
-        <section id="home-tournament">
-            <h2>TOURNAMENTS</h2>
-            <div class="home-tourn">
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-msi.png">
-                    <div class="home-tourn-container">
-                        <h4>MSI</h4>
-                        <p><b>INTERNATIONAL</b></p>
-                    </div>
-                </div>
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-lec.png">
-                    <div class="home-tourn-container">
-                        <h4>LEC</h4>
-                        <p><b>EUROPE</b></p>
-                    </div>
-                </div>
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-em.png">
-                    <div class="home-tourn-container">
-                        <h4>MSI</h4>
-                        <p><b>EUROPE</b></p>
-                    </div>
-                </div>
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-pgnational.png">
-                    <div class="home-tourn-container">
-                        <h4>PG</h4>
-                        <p><b>EUROPE</b></p>
-                    </div>
-                </div>
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-cblol.png">
-                    <div class="home-tourn-container">
-                        <h4>CBLOL</h4>
-                        <p><b>BRAZIL</b></p>
-                    </div>
-                </div>
-                <div class="home-tourn-card">
-                    <img src="./img/tournament-korea.png">
-                    <div class="home-tourn-container">
-                        <h4>LCK</h4>
-                        <p><b>KOREA</b></p>
-                    </div>
-                </div>
+            <div class="player">
+                <a href="#"> <img src="../img/palyer-g2-02.svg"></a>
+                <div class="player-name allign"><span>Name:</span><span>Sergen Celik</span></div>
+                <div class="player-age allign"><span>Age:</span><span>22</span></div>
+                <div class="player-nickname allign"><span>Nickname:</span><span>broken Blade</span></div>
+                <div class="player-nation allign"><span>Nation:</span><span>Germany</span></div>
+                <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
             </div>
-            <div class="cta"><button>Discover more</button></div>
-        </section>
-        <section id="home-join">
-            <div class="home-join-container">
-                <h2>JOIN TOURNAMENT</h2>
-                <p>Compile the form to join one or more LOL tournament</p>
-                <div class="cta"><button>Join</button></div>
+            <div class="player">
+                <a href="#"> <img src="../img/player-g2-01.svg"></a>
+                <div class="player-name allign"><span>Name:</span><span>Sergen Celik</span></div>
+                <div class="player-age allign"><span>Age:</span><span>22</span></div>
+                <div class="player-nickname allign"><span>Nickname:</span><span>broken Blade</span></div>
+                <div class="player-nation allign"><span>Nation:</span><span>Germany</span></div>
+                <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
             </div>
-        </section>
-        <section id="home-about">
-            <div class="home-about-container">
-                <h2>ABOUT</h2>
-            </div>
-            <div class="home-about-text">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta tempora hic officia modi
-                    corrupti
-                    officiis esse, iusto autem corporis deserunt quia nostrum reiciendis, rem ea dolores maxime
-                    quaerat
-                    minima quisquam.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi maiores, libero, tempore cupiditate
-                    soluta, fugit similique voluptas eaque explicabo consectetur sed iure quisquam dolore esse. Hic
-                    aperiam numquam doloremque consectetur!</p>
-            </div>
-            <div class="cta"><button>READ MORE</button></div>
-        </section>
-        <section id="home-gallery">
-            <img src="./img/cover.png">
-            <video autoplay muted loop id="myVideo">
-                <source src="./img/video.webm" type="video/webm">
-            </video>
-            <div class="home-gallery">
-                <div class="cta"><button>OPEN MEDIA</button></div>
-            </div>
-        </section>
+        </div>
     </main>
     <!-- Footer-->
     <footer>
@@ -236,7 +212,8 @@
         </div>
         <div class="footer-content">
             <div class="link">
-                <h2><a href="mailto:pietro.milanese@edu.itspiemonte.it,francesco.finotto@edu.itspiemonte.it" target="_blank">Contact us</a></h2>
+                <h2><a href="mailto:pietro.milanese@edu.itspiemonte.it,francesco.finotto@edu.itspiemonte.it"
+                        target="_blank">Contact us</a></h2>
             </div>
             <div class="link">
                 <h2><a href="https://goo.gl/maps/TK7JoLTiS41RBYH1A" target="_blank">Where we are</a></h2>
@@ -283,5 +260,8 @@
         </div>
     </footer>
     <!-- end of the body -->
+    <script src="../script/teams.js"></script>
+
 </body>
+
 </html>

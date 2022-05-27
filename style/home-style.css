@@ -10,12 +10,12 @@
 main {
     margin-top: 50px;
     background-color: #0B132B;
-    scroll-behavior: revert;
+    scroll-behavior: smooth;
 }
 
 /** HERO */
 
-.hero {
+.home-hero {
     background: url(../img/hero-hp.jpg);
     width: 100%;
     height: 100vh;
@@ -25,8 +25,12 @@ main {
     display: flex;
     flex-direction: column;
     color: white;
-    justify-content: center;
+    padding-top: 20%;
     align-items: center;
+}
+
+.hero-logo{
+    width: 30%;
 }
 
 
@@ -48,13 +52,66 @@ h1 {
     }
 }
 
+/**Scroll down icon*/
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 20px;
+}
+
+.arrows path {
+	stroke: #2DFDB9;
+	fill: transparent;
+	stroke-width: 3px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari Chrome */
+}
+
+
+
+
+
 h2 {
     padding: 10px 20px;
     text-shadow: 0px 1px 4px black;
     margin: 0;
 }
 
-h4 {
+h3 {
     font-size: 23px;
     padding: 0;
     margin: 0;
@@ -72,12 +129,12 @@ p {
     padding: 20px 0 20px 0;
 }
 
-.hero>p {
+.home-hero>p {
     font-size: 30px;
 }
 
 /**sub menu*/
-.sub-menu {
+.home-sub-menu {
 
     position: sticky;
     top: 50px;
@@ -88,18 +145,18 @@ p {
     z-index: 1;
 }
 
-.sub-menu>hr {
+.home-sub-menu>hr {
     width: auto;
     color: white;
     border: 1px solid;
 }
 
-.sub-menu>a {
+.home-sub-menu>a {
     color: white;
     padding: 3px;
 }
 
-.sub-menu>a:link, a:visited {
+.home-sub-menu>a:link, a:visited {
     text-decoration: none;
 }
 
@@ -120,12 +177,11 @@ button:hover {
     background-color: #1C2541;
     color: #2DFDB9;
     box-shadow: 0px 1px 4px black;
-    ;
 }
 
 /**NEWS*/
 
-.news {
+.home-news {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -133,7 +189,7 @@ button:hover {
     margin: auto;
 }
 
-.news-card {
+.home-news-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: auto;
@@ -141,15 +197,17 @@ button:hover {
 
 }
 
-.news-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.home-news-card:hover {
+    box-shadow: 0 18px 16px 0 rgba(0, 0, 0, 0.455);
+    cursor: pointer;
+    
 }
 
-.news-card>picture>img {
+.home-news-card>picture>img {
     width: 100%;
 }
 
-.news-container {
+.home-news-container {
     padding: 2px 16px;
     color: black;
     background-color: white;
@@ -157,11 +215,11 @@ button:hover {
 
 /**TOURNAMNETS*/
 
-#tournament {
+#home-tournament {
     background-color: #0B132B;
 }
 
-.tourn {
+.home-tourn {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -172,7 +230,7 @@ button:hover {
     margin-bottom: 10px;
 }
 
-.tourn-card {
+.home-tourn-card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,63 +240,71 @@ button:hover {
 
 }
 
-.tourn-card:hover {
+.home-tourn-card:hover {
     cursor: pointer;
     color: #2DFDB9;
 }
 
-.tourn-container p {
+.home-tourn-container p {
     font-size: 10px;
 }
 
 /**JOIN*/
-#join {
+#home-join {
     width: 100%;
     position: relative;
 }
 
-.join-container {
+.home-join-container {
     background-image: url(../img/lol.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 40vh;
 }
 
-.join-container>p {
+.home-join-container>p {
     text-align: center;
     width: 100%;
     padding: 20px;
     font-size: 20px;
+    margin-top: 20%;
 
 }
 
 /**ABOUT*/
 
+#home-about{
+    background-color: #1C2541;
+}
 
-
-.about-text {
+.home-about-text {
     color: white;
     padding: 20px;
+    width: 80%;
+    margin: auto;
 }
 
 /**Gallery*/
 
-#gallery {
+#home-gallery {
     background: #0b132b;
     width: 71%;
     margin: auto;
+    padding-top: 20px;
 }
 
-#gallery>img {
+#home-gallery>img {
     position: absolute;
     width: 71%;
+    border: 2px solid #0b132b;
 }
 
-.gallery {
+.home-gallery {
     height: 15vh;
     background-color: #0B132B;
 }
 
-#gallery>video {
+#home-gallery>video {
     width: 100%;
     object-fit: fill;
 }
@@ -250,13 +316,23 @@ button:hover {
 
 @media screen and (min-width: 870px) {
 
+    /**Hero*/
+    .home-hero {
+        
+        padding-top: 6%;
+        
+    }
+    
+    .hero-logo{
+        width: 10%;
+    }
 
     h1 {
-        font-size: 60px;
+        font-size: 80px;
     }
 
     /**NEWS*/
-    .news {
+    .home-news {
         padding: 20px;
         display: flex;
         flex-direction: row;
@@ -264,17 +340,31 @@ button:hover {
         width: auto;
     }
 
-    .news-card {
+    .home-news-card {
 
         width: 30%;
 
     }
+    .home-news-card:hover {
+
+        width: 33%;
+
+    }
+
+    
 
     /**TOURNAMENTS*/
-    .tourn {
+    .home-tourn {
 
         flex-direction: row;
+    }
 
+    /**Join*/
+    .home-join-container>p {
+       
+        margin-top: 6%;
+        font-size: 40px;
+    
     }
 
 }

@@ -1,0 +1,53 @@
+main {
+    margin-bottom: 30px;
+}
+
+main h2 {
+    margin-top: 55px;
+    text-align: center;
+    font-size: 40px;
+}
+
+main img {
+    width: 95%;
+    opacity: 0.9;
+}
+
+main img:hover {
+    width: 98%;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.container-gallery {
+    column-count: 4;
+    column-gap: 16px;
+    width: 90%;
+    margin: auto;
+}
+
+.container-gallery .gallery-image {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .container-gallery {
+        column-count: 3;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-gallery {
+        column-count: 2;
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container-gallery {
+        column-count: 1;
+    }
+}

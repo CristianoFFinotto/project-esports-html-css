@@ -1,0 +1,64 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: blue;
+    justify-content: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.all {
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+    background-color: rgb(163, 142, 22);
+    color: black;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.container {
+    box-shadow: -1px 9px 18px -5px rgba(17,17,17,1);
+
+    transition: 0.5s;
+}
+
+.container:hover {
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+img:hover {
+    width: 210px;
+    margin: 0px;
+
+    transition: all 0.5s;
+}
+
+.tournament-1, .tournament-2,
+.tournament-3, .tournament-4 {
+    height: 510px;
+    padding: 20px;
+}
+
+img {
+    width: 200px;
+    transition: 0.5s;
+}
