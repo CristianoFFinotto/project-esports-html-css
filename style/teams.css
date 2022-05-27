@@ -1,5 +1,5 @@
 main h2{
-    margin-top: 10%;
+    margin-top: 55px;
     text-align: center;
     font-size: 40px;
 }
@@ -76,7 +76,7 @@ main h3 {
 }
 
 .player img{
-    width: 50px;
+    width: 100px;
     box-shadow: -4px 6px 6px #907c1c;
 }
 
