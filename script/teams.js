@@ -1,5 +1,6 @@
 /**
- * 
+ * take ID name from DOM and hide the other element
+ * @param string id
 */
 
 function openTeam(teamName) {
