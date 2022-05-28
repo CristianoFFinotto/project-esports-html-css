@@ -22,7 +22,9 @@ main h3 {
     position: sticky;
     top: 49px;
     background: #0b132b;
-    
+    border-width: 4px 0px;
+    border-style: solid;
+    border-color: white;
 }
 
 
@@ -32,17 +34,12 @@ main h3 {
 
 
 .teams-container img{
-    
     width: 63px;
     padding: 4%;
-    
 }
 
 .teams-container img:hover{
-    
-    width: 70px;
-    padding: 1%;
-    
+    background-color: #2dfdb8bd;
 }
 
 .team{
@@ -100,12 +97,6 @@ main h3 {
     
         width: 80px;
    
-        
-    }
-    
-    .teams-container img:hover{
-        
-        width: 85px;
         
     }
     
