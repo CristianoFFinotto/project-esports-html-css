@@ -11,6 +11,3 @@ function openTeam(teamName) {
   }
   document.getElementById(teamName).style.display = "block";
 }
-
-
-
