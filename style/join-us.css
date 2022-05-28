@@ -1,0 +1,160 @@
+#title-join-us {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 80px;
+}
+
+main #main-box {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+main #main-box #logo-box {
+    display: none;
+    
+}
+
+#contact-form {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
+#contact-form div {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact-form input,#contact-form select,#contact-form textarea {
+    padding: 10px;
+    margin: 10px 10%;
+    width: 100%;
+    max-width: 252px;
+    min-width: 250px;
+}
+
+
+
+#contact-form input:focus, select, textarea {
+    outline: none;
+}
+
+#contact-form label {
+    text-align: center;
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 10%;
+}
+
+#contact-form p {
+    font-weight: bold;
+    font-size: 1.4em;
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+}
+
+#contact-form input[type='checkbox'] {
+    height: 20px;
+}
+
+#contact-form input[type='submit'] {
+    background-color: #2DFDB9;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#contact-form h6 {
+    font-weight: bold;
+    height: fit-content;
+    color: red;
+    margin: 0;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: center;
+}
+
+#contact-form .input-error {
+    border-color: red;
+    outline: red;
+}
+
+.hide {
+    display: none;
+}
+
+#success {
+    width: fit-content;
+    margin: 80px auto;
+    padding: 20px;
+    color: black;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: greenyellow;
+}
+
+
+
+@media screen and (min-width: 869.99px){
+
+    #contact-form {
+        background-color: rgb(52, 48, 73);
+        border-radius: 20px;
+    }
+
+    #contact-form div{
+        width: 40%;
+        margin: 0 26px;
+    }
+
+    #contact-form div:nth-of-type(13){
+        height: 42.39px;
+    }
+
+    main img {
+        display: initial;
+        width: 400px;
+    }
+
+    main > h1 {
+        visibility: hidden;
+    }
+
+    main #main-box #logo-box h1 {
+        font-size: 80px;
+        font-weight: bold;
+    }
+
+    main #main-box #logo-box {
+        display: initial;
+        text-align: center;
+        width: 45%;
+    }
+
+    #success {
+        position: relative;
+        top: -80px;
+    }
+
+}
+
+@media screen and (min-width: 1299.99px) {
+    #contact-form div:nth-of-type(15){
+        position: relative;
+        
+    }
+
+    #contact-form #bio {
+        position: absolute;
+        top: -350px;
+        height: 330px;
+    }
+}
+

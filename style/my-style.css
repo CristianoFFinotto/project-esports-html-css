@@ -50,8 +50,16 @@ main {
 
 /* main menu hamburger */
 
+#menu-hamburger {
+    width: fit-content;
+}
+
 #menu-hamburger-toggler {
     display: none;
+}
+
+nav label {
+    width: fit-content;
 }
 
 .stick {
@@ -82,7 +90,7 @@ main {
     margin-top: -18px;
 }
 
-/* animation open primary menu */
+/* animation open hamburger menu */
 
 @keyframes fadeIn {
     from {
@@ -111,7 +119,7 @@ main {
     animation: fadeIn 2s;
 }
 
-#menu-hamburger-toggler:checked~main {
+#menu-hamburger-toggler:checked ~ main,  #menu-hamburger-toggler:checked ~ footer{
     display: none;
 }
 
@@ -130,14 +138,5 @@ main {
 
 /**************** JOIN-US SMARTPHONE *****************/
 
-#contact-form {
-    padding-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-#contact-form input {
-    padding: 10px;
-    margin: 10px auto;
-}
+
