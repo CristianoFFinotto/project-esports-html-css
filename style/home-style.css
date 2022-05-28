@@ -341,15 +341,20 @@ button:hover {
     }
 
     .home-news-card {
-
         width: 30%;
-
     }
-    .home-news-card:hover {
 
-        width: 33%;
-
+    .home-news-container {
+        height: 300px;
     }
+
+
+
+  /*   .home-news-card:hover {
+
+        width: 10%;
+
+    } */
 
     
 

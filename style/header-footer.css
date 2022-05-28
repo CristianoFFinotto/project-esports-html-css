@@ -54,7 +54,6 @@ nav>label {
     padding: 20px;
 }
 
-
 #primary-menu-list a:hover {
 
     text-shadow: 2px 4px 0px black;
@@ -73,9 +72,6 @@ nav>ul>li:last-child {
 nav>ul>li {
     padding-bottom: 20px;
 }
-
-
-
 
 /**************** HOMEPAGE SMARTPHONE *****************/
 
@@ -151,14 +147,9 @@ nav>ul>li {
     animation: fadeIn 700ms;
 }
 
-#menu-hamburger-toggler:checked~main {
-    display: none;
-}
-
 #menu-hamburger-toggler:checked~main, #menu-hamburger-toggler:checked~footer {
-    display: none;
+    visibility: hidden;
 }
-
 
 /**FOOTER*/
 .footer-svg {
@@ -200,8 +191,6 @@ footer {
     background: #1c2541;
 }
 
-
-
 .footer-bottom {
     width: 100%;
     text-align: center;
@@ -231,7 +220,6 @@ footer {
     fill: #2DFDB9;
     background-color: #2DFDB9;
 }
-
 
 @media screen and (min-width: 870px) {
 
@@ -266,9 +254,4 @@ footer {
     nav>ul>li {
         padding-bottom: 0px;
     }
-
-
-
-
-
 }
