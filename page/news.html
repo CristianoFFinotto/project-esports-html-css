@@ -12,78 +12,70 @@
         <link rel="stylesheet" href="../style/news.css"/>
     </head>
 <body>
-      <!-- start of page -->
-
-    <!-- start of page -->
-    
+    <!-- HEADER -->
+    <header>
         <!-- hamburger menu handler -->
         <input type="checkbox" id="menu-hamburger-toggler" />
-    
-        <header>
-            <!-- navbar -->
-            <nav>
-                <!-- hamburger menu -->
-                <label for="menu-hamburger-toggler">
-                    <div id="menu-hamburger">
-                        <div class="stick"></div>
-                        <div class="stick"></div>
-                        <div class="stick"></div>
-                    </div>
-                </label>
-    
-                <a href="#" target="_blank" style="fill:white">
-                    <img src="../img/logo-desktop.svg"></a>
-                <ul id="primary-menu-list">
-                    <li>
-                        <a href="../index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="../page/news.html">News</a>
-                    </li>
-                    <li>
-                        <a href="">Tournaments</a>
-                    </li>
-                    <li>
-                        <a href="">Players</a>
-                    </li>
-                    <li>
-                        <a href="./about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="">Gallery</a>
-                    </li>
-                    <li>
-                        <a href="" class="join">Join us</a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank" style="fill:white"> <svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
-                            </svg></a>
-                        <a href="https://www.instagram.com" target="_blank" style="fill:white"><svg
-                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                            </svg></a>
-                        <a href="https://www.twitch.tv/" target="_blank" style="fill:white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M2.149 0l-1.612 4.119v16.836h5.731v3.045h3.224l3.045-3.045h4.657l6.269-6.269v-14.686h-21.314zm19.164 13.612l-3.582 3.582h-5.731l-3.045 3.045v-3.045h-4.836v-15.045h17.194v11.463zm-3.582-7.343v6.262h-2.149v-6.262h2.149zm-5.731 0v6.262h-2.149v-6.262h2.149z"
-                                    fill-rule="evenodd" clip-rule="evenodd" />
-                            </svg></a>
-                        <a href="https://www.discord.com" target="_blank" style="fill:white">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                <path
-                                    d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
-                            </svg></a>
-                    </li>
-    
-                </ul>
-    
-            </nav>
-    
-        </header>
+        <!-- navbar -->
+        <nav>
+            <!-- hamburger menu -->
+            <label for="menu-hamburger-toggler">
+                <div id="menu-hamburger">
+                    <div class="stick"></div>
+                    <div class="stick"></div>
+                    <div class="stick"></div>
+                </div>
+            </label>
+            <a href="#" style="fill:white">
+                <img src="../img/logo-desktop.svg"></a>
+            <ul id="primary-menu-list">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../page/news.html">News</a>
+                </li>
+                <li>
+                    <a href="../page/tournament.html">Tournaments</a>
+                </li>
+                <li>
+                    <a href="../page/teams.html">Teams</a>
+                </li>
+                <li>
+                    <a href="../page/about.html">About</a>
+                </li>
+                <li>
+                    <a href="../page/gallery.html">Gallery</a>
+                </li>
+                <li>
+                    <a href="../page/join-us.html" class="join">JoinUs</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank" style="fill:white"> <svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg></a>
+                    <a href="https://www.instagram.com" target="_blank" style="fill:white"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg></a>
+                    <a href="https://www.twitch.tv/" target="_blank" style="fill:white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M2.149 0l-1.612 4.119v16.836h5.731v3.045h3.224l3.045-3.045h4.657l6.269-6.269v-14.686h-21.314zm19.164 13.612l-3.582 3.582h-5.731l-3.045 3.045v-3.045h-4.836v-15.045h17.194v11.463zm-3.582-7.343v6.262h-2.149v-6.262h2.149zm-5.731 0v6.262h-2.149v-6.262h2.149z"
+                                fill-rule="evenodd" clip-rule="evenodd" />
+                        </svg></a>
+                    <a href="https://www.discord.com" target="_blank" style="fill:white">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                            <path
+                                d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                        </svg></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     
         <main>
            
@@ -93,17 +85,17 @@
                     <h2>G2 Flakked - Most Impressive MSI Group Stage Player</h2>
                     <p>After five days of exciting League of Legends action in Busan, six of the best teams in the world are finally ready to enter the rumble stage at the 2022 Mid-Season Invitational. There were some players that stood out among the rest, including Flakked, G2 Esports’ rookie AD carry.</p>
                     <p>The 21-year-old marksman helped his team lock down a perfect run through Group C, as the LEC champions dominated both Evil Geniuses and ORDER in every match they had against each other. Flakked had a tournament-high 16.8 KDA with 39 kills, 62 assists, and only six deaths, according to Oracle’s Elixir, while piloting a variety of different champions like Zeri, Aphelios, Senna, Ezreal, Sion, and Kai’Sa.</p>
-                    <img src="../img/news01.webp" alt="G2 Flakked">
+                    <img src="../img/images-news/news01.webp" alt="G2 Flakked">
                     <h3>Almost record-breaking match</h3>
                     <p>As a whole, however, G2 had a destructive performance against their opponents. Collectively, they had the second-fewest total deaths, while racking up the second-most kills at the tournament so far. Granted, they faced off against one less team during the group stage, but they were also the only team to face off against another fellow major region team as well.</p>
                     <p>Looking ahead, G2 will finally get to face off against the other major regions, like China’s Royal Never Give Up and Korea’s powerhouse champions, T1. Both the LPL and LCK representatives bulldozed through their own respective groups, which means that three undefeated streaks are on the line when the tournament continues this coming weekend.</p>
-                    <img src="../img/news-G2match.webp" alt="G2 in match">
+                    <img src="../img/images-news/news-G2match.webp" alt="G2 in match">
                 </div>    
 
                 <div class="section-news">
                     <p>2 days ago</p>
                     <h2>Lorenzo "Midna" Nulli: from Overwatch player to League of Legends</h2>
-                    <img src="../img/news-midna.webp" alt="Midna">
+                    <img src="../img/images-news/news-midna.webp" alt="Midna">
                     <h3>Midna's story</h3>
                     <p>Between 2017 and 2019 Lorenzo "Midna" Nulli, whose nickname comes from his passion for the video game Zelda, was one of the best Italian Overwatch players: the first Italian to join the Overwatch Contenders, as well as being selected several times for the Overwatch national team for the World Cup and protagonist of Italy's first historic victory in the competition against Poland. Today 23 years old, between streaming and attempts to approach other games, he fell in love with League of Legends, deciding to pursue a competitive career on the title of Riot Games.</p>
                     <h3>From Tormenta to Serie A</h3>
@@ -117,7 +109,7 @@
                     <p>The former pro brings the roster of the org’s streamers to five, alongside other retired players, including Wolf and Bang, who won several world championships with the team.</p>
                     <p>Flame ended his eight-year-long player career in 2020 after parting ways with DAMWON Gaming, where he was a substitute top laner for several seasons. He said he would focus on YouTube, streaming, and content creation instead.</p>
                     <p>After retiring, he has heavily focused on his Twitch channel as a general gaming streamer, which has surpassed 120,000 followers. It’s unclear what kind of content he will create in collaboration with T1 in the future.</p>
-                    <img src="../img/news-flame.webp" alt="Flame">
+                    <img src="../img/images-news/news-flame.webp" alt="Flame">
                 </div>    
 
                 <div class="section-news">
@@ -125,7 +117,7 @@
                     <h2>St. Thomas esports club looks to become club sport, eventually varsity sport</h2>
                     <p>The St. Thomas esports club is approaching the university to become a club sport, a way to grow with the newly-expanding industry of collegiate esports.</p>
                     <p>The club has multiple playoff-contending teams in each of its leagues: League of Legends, Valorant and Rocket League. Even as a club, members often compete against schools that have a varsity program. St. Thomas’ club team has beaten varsity teams like Minnesota State University-Mankato and Ohio State.</p>
-                    <img src="../img/news-StThomas.webp" alt="St. Thomas club">
+                    <img src="../img/images-news/news-StThomas.webp" alt="St. Thomas club">
                     <h3>Financing</h3>
                     <p>By becoming a club sport, esports club will receive funding from the school for facilities, assets and traveling but is still managed by students.</p>
                     <p>Acquiring assets, such as PCs, Playstations or Xboxes, through the school’s support and funding would provide an easier experience for all gamers, regardless of the preferred game or console.</p>
@@ -136,7 +128,7 @@
                     <p>5 days ago</p>
                     <h2>League of Legends team forced to replay matches they won after technical fault</h2>
                     <p>The League of Legends Mid-Season Invitational is ongoing this week as teams from around the world compete to be the best. It’s not as prestigious as the World Championship at the end of each season, but it’s still a serious tournament which sees all the best teams competing. It’s an odd one this year as the games take place in Busan, South Korea, the international English broadcast happens from Germany, and the Chinese team, Royal Never Give Up, play from Shanghai.</p>
-                    <img src="../img/news-fault.webp" alt="team forced to replay matches">
+                    <img src="../img/images-news/news-fault.webp" alt="team forced to replay matches">
                     <h3>Covid problem</h3>
                     <p>That’s all down to COVID, with restrictions in China being heavy enough that were the team to travel to Korea, they wouldn’t be able to get back into the country and be ready to play in time for the next split of competition post-MSI. It means that various technologies have been implemented by Riot so that RNG can compete on a fair playing field with those in Busan.</p>
                     <h3>Unfortunately, it didn't work</h3>
@@ -148,7 +140,7 @@
                     <h2>League of Legends 12.8 Patch Notes: Mid-Season Mayhem</h2>
                     <p>The League of Legends 12.8 patch notes have been released, and there's a lot of changes to consider as the 2022 Mid-Season Invitational approaches on May 10.</p>
                     <p>Multiple champions received changes, but the clear winner of patch 12.8 is Swain, the Noxian Grand General. All of Swain's moves received an enhancement of some kind, from Death's Hand dealing additional damage to Vision of Empire decreasing in mana cost. His ultimate Demonic Ascension has also been reworked, becoming a more potent move in the later stages of a match.</p>
-                    <img src="../img/news-patch.webp" alt="12.8 Patch">
+                    <img src="../img/images-news/news-patch.webp" alt="12.8 Patch">
                     <p>Other champion changes include Jinx losing 50 points of base health--dropping from 610 to 560--while Vladimir has his base armor stat increased from 23 to 27. The full League of Legends 12.8 patch notes are below.</p>
                     <p>The 12.8 patch will be the patch used in the 2022 League of Legends Mid-Season Invitational, bringing the top teams from around the world to Busan, South Korea for an international competition. The tournament begins May 10 and runs until May 29.</p>
                     <p>League of Legends is a 5v5 multiplayer online battle arena with over 150 champions to take into battle, each with their own ability sets. The game is available now on PC.</p>
@@ -158,52 +150,29 @@
            
         </main>
     
-        <footer>
-            <div class="footer">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                    <polygon fill="#1c2541" points="0,100 100,0 100,100" />
-                </svg>
-            </div>
-            <div class="footer-svg">
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="#1c2541" points="0,100 100,0 100,100" />
+            </svg>
+        </div>
+        <div class="footer-svg">
             <svg xmlns="http://www.w3.org/2000/svg" id="Livello_2" data-name="Livello 2" viewBox="0 0 69 69">
                 <path
                     d="M354,465H343.3L307,501.31l-4.94-4.94-1.63-4.88a1.73,1.73,0,0,0-1.87-1.19,1.76,1.76,0,0,0-1.54,1.61l-.69,9,7.24,7.24L291,520.68h-3.29a2.76,2.76,0,0,0-2.75,2.76v7.81a2.75,2.75,0,0,0,2.75,2.75h7.81a2.76,2.76,0,0,0,2.76-2.75v-4.14L310.42,515l7.29,7.29L326,520.9a1.74,1.74,0,0,0,1.47-1.66,1.76,1.76,0,0,0-1.33-1.77l-4-1-4.9-4.9L354,475.28Z"
                     transform="translate(-285 -465)" />
-            </svg></div>
-            <div class="footer-content">
-                <div class="link">
-                    <h2>Contact US</h2>
-                </div>
-    
-                <div class="link">
-                    <h2>Where we Are</h2>
-                </div>
-    
-                <div class="link">
-                    <h2>Privacy</h2>
-                </div>
-    
-                <div class="link">
-                    <h2>Rules</h2>
-                </div>
-    
-                <div class="link">
-                    <h2>About</h2>
-                </div>
-                <div class="link">
-                    <h2>Join</h2>
-                </div>
-    
-                
-            </div>
-            <div class="social-footer">
-                <a href="https://www.youtube.com" target="_blank"> <svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:white">
+            </svg>
+        </div>
+
+        <div class="social-footer">
+            <a href="https://www.youtube.com" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" style="fill:white">
                     <path
                         d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
                 </svg></a>
-            <a href="https://www.instagram.com" target="_blank" ><svg
-                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:white">
+            <a href="https://www.instagram.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" style="fill:white">
                     <path
                         d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg></a>
@@ -218,18 +187,14 @@
                     <path
                         d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
                 </svg></a>
-            </div>
-            <hr>
-            <div class="footer-bottom">
-                <a href="#">Privacy</a>
-                <a href="#">About</a>
-                <a href="#">Example</a>
-                <p>2022 &copy; Designed by Cristiano, Michele, Pietro, Gabriele</p>
-            </div>
-        </footer>
-    
-        
-        <!-- end of the body -->
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>2022 &copy; Designed by Cristiano, Michele, Pietro, Gabriele</p>
+        </div>
+    </footer>
+
+    <!-- END OF THE BODY -->
  
 </body>
 </html>

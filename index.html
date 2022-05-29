@@ -15,6 +15,8 @@
     <!-- start of page -->
     <!-- hamburger menu handler -->
     <input type="checkbox" id="menu-hamburger-toggler" />
+
+    <!-- HEADER -->
     <header>
         <!-- navbar -->
         <nav>
@@ -26,14 +28,14 @@
                     <div class="stick"></div>
                 </div>
             </label>
-            <a href="#" target="_blank" style="fill:white">
+            <a href="#" style="fill:white">
                 <img src="./img/logo-desktop.svg"></a>
             <ul id="primary-menu-list">
                 <li>
                     <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">News</a>
+                    <a href="./page/news.html">News</a>
                 </li>
                 <li>
                     <a href="./page/tournament.html">Tournaments</a>
@@ -76,12 +78,13 @@
             </ul>
         </nav>
     </header>
-<!-- Main -->
+
+    <!-- MAIN -->
     <main>
-        <div class="home-hero">
+        <div class="home-hero" >
             <img src="./img/logo-hero.svg" class="hero-logo">
             <h1>LEAGUE OF LEGENDS <br>CHAMPIONSHIP <br>2022 SEASON</h1>
-            <svg class="arrows">
+            <svg class="arrows" id="home-news-anchor">
                 <path class="a1" d="M0 0 L30 32 L60 0"></path>
                 <path class="a2" d="M0 20 L30 52 L60 20"></path>
                 <path class="a3" d="M0 40 L30 72 L60 40"></path>
@@ -89,14 +92,14 @@
         </div>
         <div class="home-sub-menu">
             <hr />
-            <a href="#home-news">NEWS</a>
-            <a href="#home-tournament">TOURNAMENTS</a>
-            <a href="#home-join">JOIN</a>
-            <a href="#home-about">ABOUT</a>
+            <a href="#home-news-anchor">NEWS</a>
+            <a href="#home-tournament-anchor">TOURNAMENTS</a>
+            <a href="#home-join-anchor">JOIN</a>
+            <a href="#home-about-anchor">ABOUT</a>
             <a href="#home-gallery">GALLERY</a>
             <hr />
         </div>
-        <section id="home-news">
+        <section >
             <h2>NEWS</h2>
             <div class="home-news">
                 <div class="home-news-card">
@@ -128,7 +131,7 @@
                         <img src="./img/news-flame.webp">
                     </picture>
 
-                    <div class="home-news-container">
+                    <div class="home-news-container" id="home-tournament-anchor">
                         <h4>News 01</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eveniet ex beatae fuga
                             quas,
@@ -139,7 +142,7 @@
                 </div>
             </div>
         </section>
-        <section id="home-tournament">
+        <section >
             <h2>TOURNAMENTS</h2>
             <div class="home-tourn">
                 <div class="home-tourn-card">
@@ -177,7 +180,7 @@
                         <p><b>BRAZIL</b></p>
                     </div>
                 </div>
-                <div class="home-tourn-card">
+                <div class="home-tourn-card" id="home-join-anchor">
                     <img src="./img/tournament-korea.png">
                     <div class="home-tourn-container">
                         <h4>LCK</h4>
@@ -187,14 +190,14 @@
             </div>
             <div class="cta"><button>Discover more</button></div>
         </section>
-        <section id="home-join">
+        <section>
             <div class="home-join-container">
                 <h2>JOIN TOURNAMENT</h2>
                 <p>Compile the form to join one or more LOL tournament</p>
-                <div class="cta"><button>Join</button></div>
+                <div class="cta" id="home-about-anchor"><button>Join</button></div>
             </div>
         </section>
-        <section id="home-about">
+        <section>
             <div class="home-about-container">
                 <h2>ABOUT</h2>
             </div>
@@ -220,7 +223,8 @@
             </div>
         </section>
     </main>
-    <!-- Footer-->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -234,26 +238,7 @@
                     transform="translate(-285 -465)" />
             </svg>
         </div>
-        <div class="footer-content">
-            <div class="link">
-                <h2><a href="mailto:pietro.milanese@edu.itspiemonte.it,francesco.finotto@edu.itspiemonte.it" target="_blank">Contact us</a></h2>
-            </div>
-            <div class="link">
-                <h2><a href="https://goo.gl/maps/TK7JoLTiS41RBYH1A" target="_blank">Where we are</a></h2>
-            </div>
-            <div class="link">
-                <h2>News</h2>
-            </div>
-            <div class="link">
-                <h2>Tournaments</h2>
-            </div>
-            <div class="link">
-                <h2>About</h2>
-            </div>
-            <div class="link">
-                <h2>Join Tournaments</h2>
-            </div>
-        </div>
+        
         <div class="social-footer">
             <a href="https://www.youtube.com" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
                     height="24" viewBox="0 0 24 24" style="fill:white">
@@ -282,6 +267,7 @@
             <p>2022 &copy; Designed by Cristiano, Michele, Pietro, Gabriele</p>
         </div>
     </footer>
-    <!-- end of the body -->
+
+    <!-- END OF THE BODY  -->
 </body>
 </html>

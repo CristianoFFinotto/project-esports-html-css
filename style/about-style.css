@@ -1,9 +1,9 @@
+
 @media only screen and (max-width: 600px) {
     main {
         margin-top: 50px;
         width: 100%;
-        background-color: #0b132b;
-        background-image: linear-gradient(#283353, #0b132b);
+        background: linear-gradient(#111c3a, #0b132b);
     }
 
     #container-about {
@@ -15,37 +15,59 @@
         padding: 0% 2%;
     }
 
+    @keyframes shadowMobile {
+    50% {box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.444);}
+    }
+
     .section-about {
         width: 100%;
+        margin-bottom: 8%;
+        margin-top: 5%;
+        padding: 0%;
+        color: black;
+        background: linear-gradient(#2dfdb8bd, #c2a049);
+        animation: shadowMobile 10s infinite;
+    }
+
+    .section-about:last-child {
         margin-bottom: 20%;
     }
 
     .section-about img{
         width: 100%;
+        vertical-align: middle;
+    }
+
+    .section-about:first-child img{
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
     }
     
     .section-about h2 {
         text-align: center;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .section-about p {
         text-align: center;
         font-size: 20px;
+        padding: 0% 3%;
     }
   }
 
 
-  @media only screen and (min-width: 870px) {
+  @media only screen and (min-width: 600px) {
     main {
         margin-top: 50px;
         width: 100%;
-        background-color: #0b132b;
-        background-image: linear-gradient(#283353, #0b132b);
+        background: linear-gradient(#111c3a, #0b132b);
     }
 
     #container-about {
-        max-width: 90%;
+        max-width: 60%;
         display: flex;
         flex-wrap: wrap;
         margin: 0 auto;
@@ -53,22 +75,45 @@
         padding: 0% 2%;
     }
 
+    @keyframes shadowDesktop {
+        50% {box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.444);}
+    }
+
     .section-about {
         width: 100%;
-        margin-bottom: 15%;
+        margin-bottom: 8%;
+        margin-top: 5%;
+        padding: 0%;
+        color: black;
+        background: linear-gradient(#2dfdb8bd, #c2a049);
+        animation: shadowDesktop 15s infinite;
+    }
+
+    .section-about:last-child {
+        margin-bottom: 20%;
     }
 
     .section-about img{
         width: 100%;
+        vertical-align: middle;
+    }
+
+    .section-about:first-child img{
+        width: 40%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4%;
     }
     
     .section-about h2 {
         text-align: center;
-        font-size: 35px;
+        font-size: 50px;
     }
 
     .section-about p {
         text-align: center;
-        font-size: 20px;
+        font-size: 30px;
+        padding: 1% 5%;
     }
   }

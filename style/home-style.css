@@ -4,8 +4,6 @@
 * global style for all pages
 */
 
-
-
 /**MAIN*/
 main {
     margin-top: 50px;
@@ -33,13 +31,11 @@ main {
     width: 30%;
 }
 
-
-
 h1 {
     font-size: 40px;
     text-align: center;
     text-shadow: 0px 1px 4px black;
-    animation: fadeIn linear 4s;
+    animation: fadeIn linear 2s;
 }
 
 @keyframes fadeIn {
@@ -65,7 +61,7 @@ h1 {
 .arrows path {
 	stroke: #2DFDB9;
 	fill: transparent;
-	stroke-width: 3px;	
+	stroke-width: 3px;
 	animation: arrow 2s infinite;
 	-webkit-animation: arrow 2s infinite; 
 }
@@ -341,15 +337,20 @@ button:hover {
     }
 
     .home-news-card {
-
         width: 30%;
-
     }
-    .home-news-card:hover {
 
-        width: 33%;
-
+    .home-news-container {
+        height: 300px;
     }
+
+
+
+  /*   .home-news-card:hover {
+
+        width: 10%;
+
+    } */
 
     
 

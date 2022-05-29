@@ -14,10 +14,11 @@
 </head>
 
 <body>
-    <!-- start of page -->
-    <!-- hamburger menu handler -->
-    <input type="checkbox" id="menu-hamburger-toggler" />
+
+    <!-- HEADER -->
     <header>
+        <!-- hamburger menu handler -->
+        <input type="checkbox" id="menu-hamburger-toggler" />
         <!-- navbar -->
         <nav>
             <!-- hamburger menu -->
@@ -28,29 +29,29 @@
                     <div class="stick"></div>
                 </div>
             </label>
-            <a href="#" target="_blank" style="fill:white">
+            <a href="#" style="fill:white">
                 <img src="../img/logo-desktop.svg"></a>
             <ul id="primary-menu-list">
                 <li>
-                    <a href="../index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">News</a>
+                    <a href="../page/news.html">News</a>
                 </li>
                 <li>
-                    <a href="./tournament.html">Tournaments</a>
+                    <a href="../page/tournament.html">Tournaments</a>
                 </li>
                 <li>
-                    <a href="./teams.html">Team</a>
+                    <a href="../page/teams.html">Teams</a>
                 </li>
                 <li>
-                    <a href="./about.html">About</a>
+                    <a href="../page/about.html">About</a>
                 </li>
                 <li>
-                    <a href="./gallery.html">Gallery</a>
+                    <a href="../page/gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="./join-us.html" class="join">JoinUs</a>
+                    <a href="../page/join-us.html" class="join">JoinUs</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com" target="_blank" style="fill:white"> <svg
@@ -78,219 +79,389 @@
             </ul>
         </nav>
     </header>
+
+    <!-- MAIN -->
     <main>
-        <h2>League of Ledgend Teams</h2>
-       
+        <h2>League of Legends Teams</h2>
+
         <div class="teams-container">
-
             <a onclick="openTeam('cloud9')">
-                <img src="../img/teams-cloud.svg" alt="cloud9">
-
+                <img src="../img/images-teams/teams-cloud.svg" alt="cloud9">
             </a>
 
             <a onclick="openTeam('university')">
-                <img src="../img/teams-university.svg" alt="Arizona University">
-
+                <img src="../img/images-teams/teams-university.svg" alt="Arizona University">
             </a>
 
-            <a onclick="openTeam('Bat')">
-                <img src="../img/teams-bat.svg" alt="Bat">
-
-
-            </a>
+            <a onclick="openTeam('angry_bats')">
+                <img src="../img/images-teams/teams-bat.svg" alt="Bat">
             </a>
 
+            </a>
             <a onclick="openTeam('Rouge')">
-                <img src="../img/teams-rouge.svg" alt="Rouge">
-
-
+                <img src="../img/images-teams/teams-rouge.svg" alt="Rouge">
             </a>
+
             <a onclick="openTeam('DWG')">
-                <img src="../img/team-dwg.svg" alt="DWG">
-
-
+                <img src="../img/images-teams/team-dwg.svg" alt="DWG">
             </a>
+
             <a onclick="openTeam('PSG')">
-                <img src="../img/team-psg.svg" alt="PSG">
-
-
+                <img src="../img/images-teams/team-psg.svg" alt="PSG">
             </a>
+
             <a onclick="openTeam('Fnatic')">
-                <img src="../img/team-fnatic.svg" alt="Fnatic">
-
-
+                <img src="../img/images-teams/team-fnatic.svg" alt="Fnatic">
             </a>
+
             <a onclick="openTeam('Royal')">
-                <img src="../img/teams-royal.svg" alt="Royal">
-
-
+                <img src="../img/images-teams/teams-royal.svg" alt="Royal">
             </a>
+
             <a onclick="openTeam('G2')">
-                <img src="../img/teams-g2.svg" alt="G2">
-
-
+                <img src="../img/images-teams/teams-g2.svg" alt="G2">
             </a>
 
         </div>
+
+
+                                                    <!-- CLOUD9 -->
         <div id="cloud9" class="team">
-            <h3>cloud9</h2>
-                <p>Cloud9 (C9) is a North American esports team formed by the former roster of Quantic Gaming following its dissolution. Aside from League of Legends, the organization also has divisions for DotA 2, COD, Hearthstone, Super Smash Bros, Counter Strike: Global Offensive, Overwatch, and Vainglory.</p>
-                <div class="player-container">
-                    <div class="player">
-                        <img src="../img/player-cloud-01.svg">
-                        <div class="player-name allign"><span>Name:</span><span>Ibrahim Allami </span></div>
-                        <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                        <div class="player-nickname allign"><span>Nickname:</span><span>Fudge</span></div>
-                        <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                        <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                    </div>
-                    <div class="player-bio">
-                        <h5>Fudge</h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                        </p>
-                    </div>
+            <h3>cloud9</h3>
+            <p class="description-team">
+                Cloud9 (C9) is a North American esports team formed by the former roster of Quantic Gaming following
+                its dissolution. Aside from League of Legends, the organization also has divisions for DotA 2, COD,
+                Hearthstone, Super Smash Bros, Counter Strike: Global Offensive, Overwatch, and Vainglory.
+            </p>
+
+            <!-- ATTIVI -->
+            <!-- CLOUD9 -> FUDGE -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-01.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Ibrahim Allami </span></div>
+                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Fudge</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Australia</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
                 </div>
-                <hr>
-                <div class="player-container">
-                    <div class="player">
-                        <img src="../img/player-cloud-02.svg">
-                        <div class="player-name allign"><span>Name:</span><span>Robert Huang</span></div>
-                        <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                        <div class="player-nickname allign"><span>Nickname:</span><span>Blaber</span></div>
-                        <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                        <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                    </div>
-                    <div class="player-bio">
-                        <h5>Blaber</h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="player-container">
-                    <div class="player">
-                        <img src="../img/player-cloud-03.svg">
-                        <div class="player-name allign"><span>Name:</span><span>Nicolaj Jensen</span></div>
-                        <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                        <div class="player-nickname allign"><span>Nickname:</span><span>Jensen</span></div>
-                        <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                        <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                    </div>
-                    <div class="player-bio">
-                        <h5>Jensen</h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="player-container">
-                    <div class="player">
-                        <img src="../img/player-cloud-04.svg">
-                        <div class="player-name allign"><span>Name:</span><span>Kim Min-cheol</span></div>
-                        <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                        <div class="player-nickname allign"><span>Nickname:</span><span>Berserker</span></div>
-                        <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                        <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                    </div>
-                    <div class="player-bio">
-                        <h5>Berserker</h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="player-container">
-                    <div class="player">
-                        <img src="../img/player-cloud-05.svg">
-                        <div class="player-name allign"><span>Name:</span><span>Jesper Svenningsen</span></div>
-                        <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                        <div class="player-nickname allign"><span>Nickname:</span><span>Zven</span></div>
-                        <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                        <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                    </div>
-                    <div class="player-bio">
-                        <h5>Zven</h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                        </p>
-                    </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Fudge</h5>
+                    <p>
+                        Ibrahim “Fudge” Allami is a professional League of Legends player from Australia. He joined
+                        Cloud9 November 2019 as part of the LCS Academy Roster in the top laner position.
+                    </p>
                 </div>
             </div>
 
+            <hr>
+
+            <!-- CLOUD9 -> BLADER -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-02.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Robert Huang</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>22</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Blaber</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Blaber</h5>
+                    <p>
+                        Robert “Blaber” Huang is a professional League of Legends player from the USA as part of the
+                        starting LCS roster in the jungler position. He joined Cloud9 December 2017.
+                        “Blaber” first joined the team the day after he finished high school as a substitute on the
+                        Academy Roster in 2017. Since then he has earned a spot on the starting LCS roster. He’s
+                        also earned Rookie of the Split for Summer 2018 and Most Valuable Player of the Split for
+                        Spring 2020.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- CLOUD9 -> JENSEN -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-03.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Nicolaj Jensen</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>27</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Jensen</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Denmark</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>10</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Jensen</h5>
+                    <p>
+                        Nicolaj Jensen is a League of Legends esports player, currently mid laner for Cloud9. He was
+                        previously known as Incarnati0n.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- CLOUD9 -> BERSERKER -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-04.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Kim Min-cheol</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Berserker</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Berserker</h5>
+                    <p>
+                        Kim "Berserker" Min-cheol (Hangul: 김민철) is a League of Legends esports player, currently bot
+                        laner for Cloud9.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- CLOUD9 -> ZVEN -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-05.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Jesper Svenningsen</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>24</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Zven</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Denmark</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Zven</h5>
+                    <p>
+                        Jesper “Zven” Svenningsen is a professional League of Legends player from Denmark. He joined
+                        Cloud9 November 2019 as part of the starting LCS Roster in the bot lane position. On
+                        “Zven”’s previous teams the highest accomplishment earned was 3rd-4th place at the 2016
+                        League of Legends World Championship. They also placed first for the 2016 Summer EU LCS
+                        regular season and playoffs and 2nd 2016 EU LCS Spring.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- RITIRATI -->
+            <!-- CLOUD9 -> SVEMSKEREN -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/cloud9/player-cloud-06.webp">
+                    <div class="player-name allign"><span>Name:</span><span>Dennis Kohnsen</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>26</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Svemskeren</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Denmark</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>8</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Svenskeren</h5>
+                    <p>
+                        Dennis "Svenskeren" Johnsen is a League of Legends esports player, currently
+                        substitute jungler for Cloud9.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+                                                <!-- ARIZONA UNIVERSITY -->
         <div id="university" class="team" style="display:none">
             <h3>Arizona University</h3>
-            <p>Arizona State University is a university and team in Tempe, Arizona.</p>
+            <p>The largest gaming community at Arizona State University</p>
+
+            <!-- ATTIVI -->
+            <!-- ARIZONA UNIVERSITY -> FIRETHEFT -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-arizona-01.svg">
+                    <img src="../img/images-players/arizona-university/player-arizona-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Nathan Harris</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>20</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Firetheft</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Firetheft</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p>
+                        Nathan "Firetheft" Harris is a League of Legends esports player,
+                        currently top laner for Arizona State University.
                     </p>
                 </div>
             </div>
+
             <hr>
+
+            <!-- ARIZONA UNIVERSITY -> FIRINZ-->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-avatar.svg">
+                    <img src="../img/images-players/arizona-university/player-arizona-02.webp">
                     <div class="player-name allign"><span>Name:</span><span>Sean Innes</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Firinz</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Natiosn:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Firinz</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p>
+                        Sean "Firinz" Innes is a League of Legends esports player,
+                        currently jungler for Arizona State University.
                     </p>
                 </div>
             </div>
+
             <hr>
+
+            <!-- ARIZONA UNIVERSITY -> JUKE JOUSTER -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-arizona-03.svg">
-                    <div class="player-name allign"><span>Name:</span><span>Alex Espinosa</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                    <div class="player-nickname allign"><span>Nickname:</span><span>Snoopsss</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <img src="../img/images-players/arizona-university/player-arizona-03.webp">
+                    <div class="player-name allign"><span>Name:</span><span>Micheal Kirchner</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>23</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Juke Jouster</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>3</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
-                    <h5>Snoopsss</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <h5>Juke Jouster</h5>
+                    <p>
+                        Juke Jouster is a League of Legends esports player,
+                        currently mid laner for Arizona State University.
                     </p>
                 </div>
             </div>
+
             <hr>
+
+            <!-- ARIZONA UNIVERSITY -> ZESHOO -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/arizona-university/player-arizona-04.webp">
+                    <div class="player-name allign"><span>Name:</span><span>Ian Miner</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Zeshoo</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>10</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Zeshoo</h5>
+                    <p>
+                        Zeshoo is a League of Legends esports player,
+                        currently mid laner for Arizona State University.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- ARIZONA UNIVERSITY -> PSEUDO -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/arizona-university/player-arizona-05.webp">
+                    <div class="player-name allign"><span>Name:</span><span>Abe Lee</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>20</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Pseudo</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>USA</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Pseudo</h5>
+                    <p>
+                        Pseudo is a League of Legends esports player,
+                        currently mid laner for Arizona State University.
+                    </p>
+                </div>
+            </div>
         </div>
 
-        <div id="Bat" class="team" style="display:none">
-            <h3>Bat team</h3>
-            <p>Angry Bats eSports is an Italian organization active on League of Legends and Valorant. It has been founded on 2020-08-21 and it's headquartered in Andria.</p>
+
+                                                <!-- DA CAMBIARE -->
+                                                <!-- ANGRY BATS -->
+        <div id="angry_bats" class="team" style="display:none">
+            <h3>Angry Bats</h3>
+            <p>
+                Angry Bats eSports is an Italian organization active on League of Legends and Valorant. It has been
+                founded on 2020-08-21 and it's headquartered in Andria.
+            </p>
+
+            <!-- ANGRY BATS -> CORRIRAGAZZO  -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-bat-01.svg">
+                    <img src="../img/images-players/angry-bats/player-bat-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Vincenzo Biganini</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>19</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Corriragazzo</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Italy</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Corriragazzo</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
+
             <hr>
+
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-bat-02.svg">
+                    <img src="../img/images-players/angry-bats/player-bat-02.svg">
                     <div class="player-name allign"><span>Name:</span><span>Dennis Giedt</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Geeroid</span></div>
@@ -299,14 +470,16 @@
                 </div>
                 <div class="player-bio">
                     <h5>Geeroid</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-bat-03.svg">
+                    <img src="../img/images-players/angry-bats/player-bat-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Filip Trajkovski</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Skaterot</span></div>
@@ -315,14 +488,16 @@
                 </div>
                 <div class="player-bio">
                     <h5>Skaterot</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-avatar.svg">
+                    <img src="../img/images-players/angry-bats/player-bat-04.webp">
                     <div class="player-name allign"><span>Name:</span><span>Alfred Bjorhag</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>TR1NKET</span></div>
@@ -331,14 +506,16 @@
                 </div>
                 <div class="player-bio">
                     <h5>TR1NKET</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-avatar.svg">
+                    <img src="../img/images-players/angry-bats/player-bat-05.webp">
                     <div class="player-name allign"><span>Name:</span><span>Alessandro Pozza</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>The Fierce</span></div>
@@ -347,183 +524,325 @@
                 </div>
                 <div class="player-bio">
                     <h5>The Fierce</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
         </div>
+
+
+
+                                                <!-- ROUGE -->
         <div id="Rouge" class="team" style="display:none">
             <h3>Rouge</h3>
-            <p>Rogue is a European League of Legends esports team. They play in the LEC.</p>
+            <p>
+                Rogue is an American organization best known for their Counter-Strike: Global Offensive and Rainbow Six
+                Siege teams. In 2018, the organization was rumored to be joining the EU LCS as part of the 2019 European
+                franchise program. On November 20, Riot Games confirmed Rogue as one of the ten partner teams for the
+                LEC 2019 Spring Split.
+            </p>
+
+            <!-- ACTIVE -->
+            <!-- ROUGE -> ODOAMNE -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-rouge-01.svg">
+                    <img src="../img/images-players/rouge/player-rouge-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Andrei Pascu</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>27</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Odoamne</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Romania</span></div>
                     <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
                 </div>
+
+                <!-- DESCRIPTION -->
                 <div class="player-bio">
                     <h5>Odoamne</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p>
+                        Odoamne played for various teams like FC Schalke 04, Splyce and Cloud9 Eclipse before he joined
+                        Rogue Esports Club in December 2020.
                     </p>
                 </div>
             </div>
+
             <hr>
+
+            <!-- ROUGE -> LARSSEN -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-rouge-02.svg">
-                    <div class="player-name allign"><span>Name:</span><span>Kim Geun-seong</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                    <div class="player-nickname allign"><span>Nickname:</span><span>Malrang</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                </div>
-                <div class="player-bio">
-                    <h5>Malrang</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="player-container">
-                <div class="player">
-                    <img src="../img/player-rouge-03.svg">
+                    <img src="../img/images-players/rouge/player-rouge-02.svg">
                     <div class="player-name allign"><span>Name:</span><span>Emil Larsson</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Larssen</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Sweden</span></div>
                     <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Larssen</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p>
+                        Larssen is not your usual rookie. He subbed in for Selfie, now Rogue’s Ultraliga mid laner, to
+                        give H2k the first win of the 2018 EU LCS Summer Split. Because of his commitment to finish
+                        school, Rogue signed him for their Ultraliga team Rogue Esports Club with the intent to move him
+                        up to the LEC roster in the upcoming 2019 Summer Split. While playing for REC, he won Ultraliga
+                        Season 1 and finished school.
                     </p>
                 </div>
             </div>
+
             <hr>
+
+            <!-- ROUGE -> NITE -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-rouge-04.svg">
-                    <div class="player-name allign"><span>Name:</span><span>Markos Stamkopoulos</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                    <div class="player-nickname allign"><span>Nickname:</span><span>Comp</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
-                </div>
-                <div class="player-bio">
-                    <h5>Comp</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
-                    </p>
-                </div>
-            </div>
-            <hr>
-            <div class="player-container">
-                <div class="player">
-                    <img src="../img/player-rouge-05.svg">
+                    <img src="../img/images-players/rouge/player-rouge-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Adrian Trybus</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
-                    <div class="player-nickname allign"><span>Nickname:</span><span>Trymbi</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Nite</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Poland</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>3</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
-                    <h5>Trymbi</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <h5>Nite</h5>
+                    <p>
+                        Trymbi was promoted from AGO Rogue to the main Rogue roster in December 2020. While in AGO Rogue
+                        Trymbi was second in the 2020 Ultraliga season and won EU Masters.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- ROUGE -> BLUEKNIGHT -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/rouge/player-rouge-04.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Nico Jannet</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>22</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Blueknight</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Germany</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Blueknight</h5>
+                    <p>
+                        Jannet is a League of Legends esports player, currently head of analytics and substitute mid
+                        laner for Rogue.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- ROUGE -> COMP -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/rouge/player-rouge-05.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Leon Markos Stamkopoulos</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>20</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Comp</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Greece</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>3</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Comp</h5>
+                    <p>
+                        Stamkopoulos is a League of Legends esports player, currently bot laner for Rogue.
                     </p>
                 </div>
             </div>
         </div>
+
+
+                                                <!-- DWG -->
         <div id="DWG" class="team" style="display:none">
             <h3>DWG</h3>
-            <p>DWG KIA is a Korean team. They were previously known as DAMWON Gaming.</p>
+            <p>
+                DWG KIA League of Legends team was founded in 2017.
+                Since its beginning, the team has recorded amazing results with 2nd place
+                at the 2018 LCK CS Spring, and 1st place at the LCK CS Summer with
+                13 wins and 1 loss. After its debut in LCK, the team has placed third and fourth
+                in the overall rankings, and came in first place at the international event
+                Rift Rivals. The team is considered to have the best skills in the world,
+                and we will become a global team that represents
+                LCK of Korea to make our country proud.
+            </p>
+
+            <!-- ACTIVE -->
+            <!-- DWG -> BURDOL -->
             <div class="player-container">
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-dwg-01.svg">
+                    <img src="../img/images-players/dwg/player-dwg-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Noh Tae</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span18</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Burdol</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>3</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Burdol</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> 
+                        Burdol is a League of Legends esports player, currently top laner for DWG KIA.
                     </p>
                 </div>
             </div>
+
             <hr>
+            
+            <!-- DWG -> HOYA-->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-dwg-02.svg">
-                    <div class="player-name allign"><span>Name:</span><span>Noh Tae</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <img src="../img/images-players/dwg/player-dwg-02.svg">
+                    <div class="player-name allign"><span>Name:</span><span>Oon Yong</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Hoya</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>Netherlands</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>4</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Hoya</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> 
+                        Hoya is a League of Legends esports player, currently top laner for DWG KIA.
                     </p>
                 </div>
             </div>
+            
             <hr>
+            
+            <!-- DWG -> CANYON-->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-dwg-03.svg">
+                    <img src="../img/images-players/dwg/player-dwg-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Kim Geon</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>20</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Canyon</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>3</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Canyon</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> 
+                        Canyon is a League of Legends esports player, currently jungler for DWG KIA.
                     </p>
                 </div>
             </div>
+            
             <hr>
+            
+            <!-- DWG -> SHOWMAKER -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-dwg-04.svg">
+                    <img src="../img/images-players/dwg/player-dwg-04.svg">
                     <div class="player-name allign"><span>Name:</span><span>Heo Su</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Showmaker</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>2</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>Showmaker</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> 
+                        ShowMakeris a League of Legends esports player, currently mid laner for DWG KIA.
                     </p>
                 </div>
             </div>
+            
             <hr>
+
+            <!-- DWG -> DEOKDAM -->
             <div class="player-container">
+
+                <!-- DESCRIPTION -->
                 <div class="player">
-                    <img src="../img/player-dwg-05.svg">
+                    <img src="../img/images-players/dwg/player-dwg-05.svg">
                     <div class="player-name allign"><span>Name:</span><span>Seo Dae</span></div>
-                    <div class="player-age allign"><span>Age:</span><span>28</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>deokdam</span></div>
-                    <div class="player-nation allign"><span>Nation:</span><span>Taiwan</span></div>
-                    <div class="player-experience allign"><span>Experience:</span><span>6</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>5</span></div>
                 </div>
+
+                <!-- BIO -->
                 <div class="player-bio">
                     <h5>deokdam</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> 
+                        Deokdam is a League of Legends esports player, currently bot laner for DWG KIA. He was previously known as Feiz.
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- RETIRED -->
+            <!-- DWG -> KELLIN -->
+            <div class="player-container">
+
+                <!-- DESCRIPTION -->
+                <div class="player">
+                    <img src="../img/images-players/dwg/player-dwg-06.webp">
+                    <div class="player-name allign"><span>Name:</span><span>Kim Gyu</span></div>
+                    <div class="player-age allign"><span>Age:</span><span>21</span></div>
+                    <div class="player-nickname allign"><span>Nickname:</span><span>Kellin</span></div>
+                    <div class="player-nation allign"><span>Nation:</span><span>South Korea</span></div>
+                    <div class="player-experience allign"><span>Experience:</span><span>5</span></div>
+                </div>
+
+                <!-- BIO -->
+                <div class="player-bio">
+                    <h5>Kim Gyu</h5>
+                    <p> 
+                        Kellin is a League of Legends esports player, currently support for DWG KIA.
                     </p>
                 </div>
             </div>
         </div>
+
+
+                                <!-- PSG -->
         <div id="PSG" class="team" style="display:none">
             <h3>PSG</h3>
-            <p>PSG Talon is a Hong Kong team formed in partnership between Talon Esports and French football club Paris Saint-Germain, who previously had their own LoL team.</p>
+            <p>PSG Talon is a Hong Kong team formed in partnership between Talon Esports and French football club Paris
+                Saint-Germain, who previously had their own LoL team.
+            </p>
+
+            <!-- ACTIVE -->
+            <!-- PSG ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-psg-01.svg">
+                    <img src="../img/images-players/psg/player-psg-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Huang Chih</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Azhi</span></div>
@@ -532,14 +851,19 @@
                 </div>
                 <div class="player-bio">
                     <h5>Azhi</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
+
             <hr>
+            
+            <!-- PSG ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-psg-02.svg">
+                    <img src="../img/images-players/psg/player-psg-02.svg">
                     <div class="player-name allign"><span>Name:</span><span>Su Chia</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Hanabi</span></div>
@@ -548,14 +872,19 @@
                 </div>
                 <div class="player-bio">
                     <h5>Azhi</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
+
             <hr>
+            
+            <!-- PSG ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-psg-03.svg">
+                    <img src="../img/images-players/psg/player-psg-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Lee Ju</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Juhan</span></div>
@@ -564,14 +893,19 @@
                 </div>
                 <div class="player-bio">
                     <h5>Juhan</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
+
             <hr>
+            
+            <!-- PSG ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-psg-04.svg">
+                    <img src="../img/images-players/psg/player-psg-04.svg">
                     <div class="player-name allign"><span>Name:</span><span>Park Jun</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>bay</span></div>
@@ -580,14 +914,19 @@
                 </div>
                 <div class="player-bio">
                     <h5>bay</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
+            
             <hr>
+            
+            <!-- PSG ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-psg-05.svg">
+                    <img src="../img/images-players/psg/player-psg-05.svg">
                     <div class="player-name allign"><span>Name:</span><span>Wong Chun</span></div>
                     <div class="player-age allign"><span>Age:</span><span>28</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Unified</span></div>
@@ -596,17 +935,26 @@
                 </div>
                 <div class="player-bio">
                     <h5>bay</h5>
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque libero tenetur!
+                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et perspiciatis ab dolor error esse
+                        enim eligendi in exercitationem consectetur, porro eum quo officia velit? Vel aut alias neque
+                        libero tenetur!
                     </p>
                 </div>
             </div>
         </div>
+
+
+
+        
         <div id="Fnatic" class="team" style="display:none">
             <h3>Fnatic</h3>
-            <p>One of the org's oldest and most successful teams, Fnatic's League of Legends team is a powerhouse in the esport. From winning the first ever League of Legends World Championship in 2011 to seven European split titles, the team still competes at the highest levels both in Europe and internationally, consistently vying for the title in Europe and beating out big international names to make deep runs at Worlds.</p>
+            <p>One of the org's oldest and most successful teams, Fnatic's League of Legends team is a powerhouse in the
+                esport. From winning the first ever League of Legends World Championship in 2011 to seven European split
+                titles, the team still competes at the highest levels both in Europe and internationally, consistently
+                vying for the title in Europe and beating out big international names to make deep runs at Worlds.</p>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-fnatic-01.svg">
+                    <img src="../img/images-players/fnatic/player-fnatic-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Oscar Munoz Jimenez</span></div>
                     <div class="player-age allign"><span>Age:</span><span>18</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Oscarinin</span></div>
@@ -615,14 +963,15 @@
                 </div>
                 <div class="player-bio">
                     <h5>Oscarinin</h5>
-                    <p> Óscar "Oscarinin" Muñoz Jiménez is a League of Legends esports player, currently top laner for Fnatic TQ. He was previously known as Oskar.
+                    <p> Óscar "Oscarinin" Muñoz Jiménez is a League of Legends esports player, currently top laner for
+                        Fnatic TQ. He was previously known as Oskar.
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/palyer-fnatic-02.svg">
+                    <img src="../img/images-players/fnatic/palyer-fnatic-02.svg">
                     <div class="player-name allign"><span>Name:</span><span>Magnus Kristensen</span></div>
                     <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>MAXI</span></div>
@@ -631,14 +980,15 @@
                 </div>
                 <div class="player-bio">
                     <h5>MAXI</h5>
-                    <p> He has been gaming since he was 6 because his older brother was into gaming too. He reached Challenger in Season 5 when he was 14 years old and hit top 10 in Season 6 and 7.
+                    <p> He has been gaming since he was 6 because his older brother was into gaming too. He reached
+                        Challenger in Season 5 when he was 14 years old and hit top 10 in Season 6 and 7.
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-fnatic-03.svg">
+                    <img src="../img/images-players/fnatic/player-fnatic-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Joao Miguel Bigas</span></div>
                     <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Baca</span></div>
@@ -647,14 +997,15 @@
                 </div>
                 <div class="player-bio">
                     <h5>Baca</h5>
-                    <p> He has been gaming since he was 6 because his older brother was into gaming too. He reached Challenger in Season 5 when he was 14 years old and hit top 10 in Season 6 and 7.
+                    <p> He has been gaming since he was 6 because his older brother was into gaming too. He reached
+                        Challenger in Season 5 when he was 14 years old and hit top 10 in Season 6 and 7.
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-fnatic-04.svg">
+                    <img src="../img/images-players/fnatic/player-fnatic-04.svg">
                     <div class="player-name allign"><span>Name:</span><span>Louis Schimtz</span></div>
                     <div class="player-age allign"><span>Age:</span><span>20</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>BEAN</span></div>
@@ -663,14 +1014,15 @@
                 </div>
                 <div class="player-bio">
                     <h5>BEAN</h5>
-                    <p> He might be sweet and polite IRL but Bean an absolute beast on AD carries, putting up huge stats in the NLC regular season on champs like Kai'Sa and Xayah to help his team top the ladder.
+                    <p> He might be sweet and polite IRL but Bean an absolute beast on AD carries, putting up huge stats
+                        in the NLC regular season on champs like Kai'Sa and Xayah to help his team top the ladder.
                     </p>
                 </div>
             </div>
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/palyer-fnatic-05.svg">
+                    <img src="../img/images-players/fnatic/palyer-fnatic-05.svg">
                     <div class="player-name allign"><span>Name:</span><span>Ruben Barbosa</span></div>
                     <div class="player-age allign"><span>Age:</span><span>25</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Rhuckz</span></div>
@@ -679,20 +1031,26 @@
                 </div>
                 <div class="player-bio">
                     <h5>Rhuckz</h5>
-                    <p> A veteran of ERLs, rhuckz has spent time in Poland, Turkey, Brazil and Spain and has now found a home on Fnatic Rising. The Portuguese support brings his experience and game knowledge to a relatively young team and as one of the veterans knows very much what he wants, leading the team in the mid game.
+                    <p> A veteran of ERLs, rhuckz has spent time in Poland, Turkey, Brazil and Spain and has now found a
+                        home on Fnatic Rising. The Portuguese support brings his experience and game knowledge to a
+                        relatively young team and as one of the veterans knows very much what he wants, leading the team
+                        in the mid game.
                     </p>
                 </div>
             </div>
-        
+
         </div>
+                                                    <!-- ROYAL -->
         <div id="Royal" class="team" style="display:none">
             <h3>Royal</h3>
             <p>One of the best rosters that Europe has ever created, this multiple title winning superteam is here to
                 take down titans and change everything you know about League of Legends. You can catch them competing
                 weekly in the League of Legends European Championship (LEC).</p>
-            <div class="player-container">
+                <!-- ACTIVE -->
+                <!-- ROYAL ->  -->
+                <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-royal-01.svg">
+                    <img src="../img/images-players/royal/player-royal-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Chen Bin</span></div>
                     <div class="player-age allign"><span>Age:</span><span>19</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>bin</span></div>
@@ -712,9 +1070,11 @@
                 </div>
             </div>
             <hr>
+            <!-- ACTIVE -->
+            <!-- ROYAL ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-royal-02.svg">
+                    <img src="../img/images-players/royal/player-royal-02.svg">
                     <div class="player-name allign"><span>Name:</span><span>Yan Yang Wei</span></div>
                     <div class="player-age allign"><span>Age:</span><span>19</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Wei</span></div>
@@ -730,9 +1090,11 @@
                 </div>
             </div>
             <hr>
+            <!-- ACTIVE -->
+            <!-- ROYAL ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-royal-03.svg">
+                    <img src="../img/images-players/royal/player-royal-03.svg">
                     <div class="player-name allign"><span>Name:</span><span>Li Yuan Hao</span></div>
                     <div class="player-age allign"><span>Age:</span><span>24</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Xiaohu</span></div>
@@ -741,16 +1103,30 @@
                 </div>
                 <div class="player-bio">
                     <h5>Xiaohu</h5>
-                    <p> After Mata and Looper's departures, Royal Never Give Up picked up LetMe for the top lane and Ming as their new support. They would finish 1st place in Group A of the 2017 LPL Spring Season with a 12-4 regular season record. In the playoffs although they made it to the finals, they lost 0-3 in dominating fashion to Team WE. The 2017 LPL Summer Season was very similar as RNG finished again in 1st place with the same 12-4 regular season record, only this time in Group B. The playoffs went similarly to the spring playoffs for the team. They made it all the way to the finals again but lost 2-3 to EDward Gaming in a reverse sweep this time. Although RNG failed to win a domestic title in 2017, Xiaohu was very impressive individually and earned an MVP of the split award for himself.
+                    <p> After Mata and Looper's departures, Royal Never Give Up picked up LetMe for the top lane and
+                        Ming as their new support. They would finish 1st place in Group A of the 2017 LPL Spring Season
+                        with a 12-4 regular season record. In the playoffs although they made it to the finals, they
+                        lost 0-3 in dominating fashion to Team WE. The 2017 LPL Summer Season was very similar as RNG
+                        finished again in 1st place with the same 12-4 regular season record, only this time in Group B.
+                        The playoffs went similarly to the spring playoffs for the team. They made it all the way to the
+                        finals again but lost 2-3 to EDward Gaming in a reverse sweep this time. Although RNG failed to
+                        win a domestic title in 2017, Xiaohu was very impressive individually and earned an MVP of the
+                        split award for himself.
 
-                        At the 2017 Season World Championship RNG was placed into Group C along with eventual tournament winners Samsung Galaxy, as well as G2 Esports and 1907 Fenerbahçe Esports. The team performed incredibly well in their group and went 5-1. They only dropped one game to G2 Esports. In the Quarterfinals their opponent was Fnatic and they defeated them 3-1 in convincing fashion. RNG's Worlds run ended in the Semifinals after a 2-3 loss to SK Telecom T1 in a very close series.
+                        At the 2017 Season World Championship RNG was placed into Group C along with eventual tournament
+                        winners Samsung Galaxy, as well as G2 Esports and 1907 Fenerbahçe Esports. The team performed
+                        incredibly well in their group and went 5-1. They only dropped one game to G2 Esports. In the
+                        Quarterfinals their opponent was Fnatic and they defeated them 3-1 in convincing fashion. RNG's
+                        Worlds run ended in the Semifinals after a 2-3 loss to SK Telecom T1 in a very close series.
                     </p>
                 </div>
             </div>
             <hr>
+            <!-- ACTIVE -->
+            <!-- ROYAL ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-royal-04.svg">
+                    <img src="../img/images-players/royal/player-royal-04.svg">
                     <div class="player-name allign"><span>Name:</span><span>Chen Wei</span></div>
                     <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Gala</span></div>
@@ -761,19 +1137,26 @@
                     <h5>Gala</h5>
                     <p> Has the same name as jingke (Chen Wei) (but not the same characters).
                         His ID GALA comes from his favorite band of the same name.
-                        Occasionally called "GALA8" by his teammates due to his tendency to come 8th in Teamfight Tactics.
-                        After getting knocked out at Worlds 2021, he jokingly said that he wanted to change his nickname to "GALA1" as he thought the number 8 was the reason why they were eliminated in the quarterfinals.
+                        Occasionally called "GALA8" by his teammates due to his tendency to come 8th in Teamfight
+                        Tactics.
+                        After getting knocked out at Worlds 2021, he jokingly said that he wanted to change his nickname
+                        to "GALA1" as he thought the number 8 was the reason why they were eliminated in the
+                        quarterfinals.
                         Reached 1000 kills in the LPL on January 23, 2022.
                         The 27th player to reach 1000 kills in the LPL.
-                        At MSI 2022, he became the first player to achieve a pentakill that was later discounted, as the game was nullified from professional play and had to be replayed.
+                        At MSI 2022, he became the first player to achieve a pentakill that was later discounted, as the
+                        game was nullified from professional play and had to be replayed.
                         In the remake of the game one day later he scored another pentakill.
                     </p>
                 </div>
             </div>
             <hr>
+
+            <!-- ACTIVE -->
+            <!-- ROYAL ->  -->
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/palyer-royal-05.svg">
+                    <img src="../img/images-players/royal/palyer-royal-05.svg">
                     <div class="player-name allign"><span>Name:</span><span>Liu Wen kang</span></div>
                     <div class="player-age allign"><span>Age:</span><span>20</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Bunny</span></div>
@@ -782,7 +1165,8 @@
                 </div>
                 <div class="player-bio">
                     <h5>Bunny</h5>
-                    <p> Liu "Bunny" Wen-Kang is a League of Legends esports player, currently substitute support for Royal Never Give
+                    <p> Liu "Bunny" Wen-Kang is a League of Legends esports player, currently substitute support for
+                        Royal Never Give
                     </p>
                 </div>
             </div>
@@ -794,7 +1178,7 @@
                 weekly in the League of Legends European Championship (LEC).</p>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/player-g2-01.svg">
+                    <img src="../img/images-players/g2/player-g2-01.svg">
                     <div class="player-name allign"><span>Name:</span><span>Sergen Celik</span></div>
                     <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>broken Blade</span></div>
@@ -812,7 +1196,7 @@
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <img src="../img/palyer-g2-02.svg"></a>
+                    <img src="../img/images-players/g2/palyer-g2-02.svg"></a>
                     <div class="player-name allign"><span>Name:</span><span>Marcin Jankowski</span></div>
                     <div class="player-age allign"><span>Age:</span><span>26</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Jankos</span></div>
@@ -835,7 +1219,7 @@
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <a href="#"> <img src="../img/player-g2-03.svg"></a>
+                    <a href="#"> <img src="../img/images-players/g2/player-g2-03.svg"></a>
                     <div class="player-name allign"><span>Name:</span><span>Rasmus Winther</span></div>
                     <div class="player-age allign"><span>Age:</span><span>22</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>caPs</span></div>
@@ -863,7 +1247,7 @@
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <a href="#"> <img src="../img/player-g2-04.svg"></a>
+                    <a href="#"> <img src="../img/images-players/g2/player-g2-04.svg"></a>
                     <div class="player-name allign"><span>Name:</span><span>Victor Tortosa</span></div>
                     <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Flakked</span></div>
@@ -880,7 +1264,7 @@
             <hr>
             <div class="player-container">
                 <div class="player">
-                    <a href="#"> <img src="../img/player-g2-05.svg"></a>
+                    <a href="#"> <img src="../img/images-players/g2/player-g2-05.svg"></a>
                     <div class="player-name allign"><span>Name:</span><span>Raphael Crabbe</span></div>
                     <div class="player-age allign"><span>Age:</span><span>21</span></div>
                     <div class="player-nickname allign"><span>Nickname:</span><span>Targamas</span></div>
@@ -897,7 +1281,8 @@
             </div>
         </div>
     </main>
-    <!-- Footer-->
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -911,27 +1296,7 @@
                     transform="translate(-285 -465)" />
             </svg>
         </div>
-        <div class="footer-content">
-            <div class="link">
-                <h2><a href="mailto:pietro.milanese@edu.itspiemonte.it,francesco.finotto@edu.itspiemonte.it"
-                        target="_blank">Contact us</a></h2>
-            </div>
-            <div class="link">
-                <h2><a href="https://goo.gl/maps/TK7JoLTiS41RBYH1A" target="_blank">Where we are</a></h2>
-            </div>
-            <div class="link">
-                <h2>News</h2>
-            </div>
-            <div class="link">
-                <h2>Tournaments</h2>
-            </div>
-            <div class="link">
-                <h2>About</h2>
-            </div>
-            <div class="link">
-                <h2>Join Tournaments</h2>
-            </div>
-        </div>
+
         <div class="social-footer">
             <a href="https://www.youtube.com" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg" width="24"
                     height="24" viewBox="0 0 24 24" style="fill:white">
@@ -960,7 +1325,8 @@
             <p>2022 &copy; Designed by Cristiano, Michele, Pietro, Gabriele</p>
         </div>
     </footer>
-    <!-- end of the body -->
+
+    <!-- END OF THE BODY -->
     <script src="../script/teams.js"></script>
 
 </body>
