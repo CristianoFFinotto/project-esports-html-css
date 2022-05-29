@@ -156,6 +156,7 @@ p {
     text-decoration: none;
 }
 
+
 button {
 
     background-color: #2DFDB9;
@@ -236,13 +237,18 @@ button:hover {
 
 }
 
-.home-tourn-card:hover {
+.home-tourn-card a:hover {
     cursor: pointer;
     color: #2DFDB9;
 }
 
 .home-tourn-container p {
     font-size: 10px;
+}
+
+.home-tourn  a, a:link, a:visited {
+    text-decoration: none;
+    color: white;
 }
 
 /**JOIN*/
