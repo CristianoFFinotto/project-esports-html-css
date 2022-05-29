@@ -333,6 +333,7 @@ button:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: flex-start;
         width: auto;
     }
 
@@ -341,7 +342,7 @@ button:hover {
     }
 
     .home-news-container {
-        height: 300px;
+        width: auto;
     }
 
 
