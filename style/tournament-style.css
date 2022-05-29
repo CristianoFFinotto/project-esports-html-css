@@ -188,6 +188,10 @@ body .section-2 {
 }
 
 .section-2 .container {
+    padding-top: 40px;
+}
+
+.section-2 .container {
     box-shadow: none;
     transition: 0.5s;
 }
