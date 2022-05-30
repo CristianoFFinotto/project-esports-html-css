@@ -7,6 +7,7 @@
 /* MAIN */
 main {
     margin-top: 50px;
+    margin-bottom: 60px;
     background-color: #0B132B;
     scroll-behavior: smooth;
 }
@@ -260,16 +261,15 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 45vh;
+    height: 50vh;
     color: white;
-    ;
 }
 
-.home-join-container > p {
+.home-join-container p {
     text-align: center;
     width: 100%;
     padding: 20px;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 20%;
 }
 
@@ -354,8 +354,8 @@ p {
     }
 
     /* Join */
-    .home-join-container > p {
+    .home-join-container p {
         margin-top: 6%;
-        font-size: 40px;
+        font-size: 20px;
     }
 }
