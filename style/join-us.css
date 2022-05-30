@@ -45,8 +45,6 @@ main #main-box #logo-box {
     min-width: 250px;
 }
 
-
-
 #contact-form input:focus, select, textarea {
     outline: none;
 }
@@ -106,8 +104,6 @@ main #main-box #logo-box {
     border-bottom-right-radius: 20px;
     background-color: greenyellow;
 }
-
-
 
 @media screen and (min-width: 869.99px){
 

@@ -58,11 +58,9 @@ main .tournament-button:hover {
     border-color: white;
 }
 
-
 .teams-container a{
     cursor: pointer;
 }
-
 
 .teams-container img{
     width: 63px;
@@ -74,12 +72,13 @@ main .tournament-button:hover {
 }
 
 .team{
-   
     padding: 2%;
     width: 100%;
     margin: 6% auto 6% auto;
-    background: rgb(144, 124, 28);
+    background: #2DFDB9;
+    color: black;
 }
+
 .player-container{
     background: white;
     color: black;
@@ -105,7 +104,7 @@ main .tournament-button:hover {
 
 .player img{
     width: 100px;
-    box-shadow: -4px 6px 6px #907c1c;
+    box-shadow: -4px 6px 6px #2DFDB9;
 }
 
 .allign{
@@ -115,20 +114,14 @@ main .tournament-button:hover {
 
 @media screen and (min-width: 870px) {
     .team{
-   
-        
         width: 80%;
-        
     }
+
     .player{
         font-size: 20px;
     }
 
     .teams-container img{
-    
         width: 80px;
-   
-        
     }
-    
 }
