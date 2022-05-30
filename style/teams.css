@@ -14,6 +14,34 @@ main h3 {
     font-size: 40px;
 }
 
+main .tournament-button {
+    position: absolute;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    border: 2px solid black;
+    margin: 20px;
+    font-size: 20px;
+    z-index: 5;
+    cursor: pointer;
+}
+
+main .tournament-button {
+    background: #2DFDB9;
+    color: black;
+
+    transition: 0.8s;
+}
+
+main .tournament-button:hover {
+    background: black;
+    color: #2DFDB9;
+    border: 2px solid #2DFDB9;
+
+    transition: 0.5s;
+}
+
 .teams-container{
     margin: auto;
     width: 100%;
