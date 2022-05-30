@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./img/logo-hero.svg">
-    <meta name="author" content="Cristiano Francesco Finotto, Pietro Milanese, Gabriele Bovolenta, Michele Davide Aliverti" />
-    <meta name="description" content="main page of site" />
-    <title>esports-07-home-page</title>
-    <link rel="stylesheet" href="./style/NORMALIZE.css" />
-    <link rel="stylesheet" href="./style/header-footer.css" />
-    <link rel="stylesheet" href="./style/home-style.css" />
-</head>
-
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/img/logo-hero.svg">
+        <meta name="author"
+            content="Cristiano Francesco Finotto, Pietro Milanese, Gabriele Bovolenta, Michele Davide Aliverti" />
+        <meta name="description" content="site about esports" />
+        <title>news-page</title>
+        <link rel="stylesheet" href="/style/NORMALIZE.css" />
+        <link rel="stylesheet" href="/style/header-footer.css"/>
+        <link rel="stylesheet" href="/style/news-article.css"/>
+    </head>
 <body>
-    <!-- start of page -->
     <!-- hamburger menu handler -->
     <input type="checkbox" id="menu-hamburger-toggler" />
-
+    
     <!-- HEADER -->
     <header>
         <!-- navbar -->
@@ -31,28 +29,28 @@
                 </div>
             </label>
             <a href="/index.html" style="fill:white">
-                <img src="./img/logo-desktop.svg" alt></a>
+                <img src="/img/logo-desktop.svg"></a>
             <ul id="primary-menu-list">
                 <li>
-                    <a href="./index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="./page/news.html">News</a>
+                    <a href="/page/news.html">News</a>
                 </li>
                 <li>
-                    <a href="./page/tournament.html">Tournaments</a>
+                    <a href="/page/tournament.html">Tournaments</a>
                 </li>
                 <li>
-                    <a href="./page/teams.html">Teams</a>
+                    <a href="/page/teams.html">Teams</a>
                 </li>
                 <li>
-                    <a href="./page/about.html">About</a>
+                    <a href="/page/about.html">About</a>
                 </li>
                 <li>
-                    <a href="./page/gallery.html">Gallery</a>
+                    <a href="/page/gallery.html">Gallery</a>
                 </li>
                 <li>
-                    <a href="./page/join-us.html" class="join">JoinUs</a>
+                    <a href="/page/join-us.html" class="join">JoinUs</a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com" target="_blank" style="fill:white"> <svg
@@ -80,179 +78,28 @@
             </ul>
         </nav>
     </header>
+    
+        <main>
 
-    <!-- MAIN -->
-    <main>
-        <div class="home-hero">
-            <img src="./img/logo-hero.svg" class="hero-logo">
-            <h1>LEAGUE OF LEGENDS <br>CHAMPIONSHIP <br>2022 SEASON</h1>
-            <a href="#home-news-anchor">
-            <svg class="arrows" id="home-news-anchor">
-                <path class="a1" d="M0 0 L30 32 L60 0"></path>
-                <path class="a2" d="M0 20 L30 52 L60 20"></path>
-                <path class="a3" d="M0 40 L30 72 L60 40"></path>
-            </svg>
-        </a>
-        </div>
-        <div class="home-sub-menu">
-            <hr />
-            <a href="#home-news-anchor">NEWS</a>
-            <a href="#home-tournament-anchor">TOURNAMENTS</a>
-            <a href="#home-join-anchor">JOIN</a>
-            <a href="#home-about-anchor">ABOUT</a>
-            <a href="#home-gallery">GALLERY</a>
-            <hr />
-        </div>
-        <section>
-            <h2>NEWS</h2>
-            <div class="home-news" id="home-news-anchor">
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/hp-news01.webp" alt="G2 palying with team">
-                    </picture>
-                    <div class="home-news-container">
-                        <h4>G2 Flakked - Most Impressive MSI Group Stage Player League of Legends</h4>
-                        <p>Flakked is the player with the best KDA in the groups stage - nearly 17 over 8 matches - and
-                            damage and gold numbers to match his veteran mid lane...</p>
-                        <div class="cta">
-                            <a href="./page/news-articles/g2-flakked.html">
-                                <button>READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/hp-news02.webp" alt="Midna playing a match">
-                    </picture>
-                    <div class="home-news-container">
-                        <h4>Lorenzo "Midna" Nulli: from Overwatch player to League of Legends</h4>
-                        <p>Between 2017 and 2019 Lorenzo "Midna" Nulli, whose nickname comes from his passion for the
-                            video game Zelda, was one of the best Italian Overwatch players...</p>
-                        <div class="cta">
-                            <a href="./page/news-articles/midna.html">
-                                <button>READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="home-news-card">
-                    <picture>
-                        <img src="./img/hp-news03.webp" alt="T1 interview">
-                    </picture>
-                    <div class="home-news-container">
-                        <h4>Retired League pro Flame joins T1 as partnered streamer to League of Legends</h4>
-                        <p>T1 has signed legendary League of Legends top laner Lee “Flame” Ho-Jong as a content creator
-                            and partnered streamer, the organization revealed today on social media...</p>
-                        <div class="cta">
-                            <a href="./page/news-articles/retired-flame.html">
-                                <button>READ MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <h1>News</h1>
+           
+            <div id="container-news">
+                <a href="/page/news.html" class="back">&laquo;</a>
+                <div class="section-news" id="third-news">
+                    <p>24/05/2022</p>
+                    <h2>Retired League pro Flame joins T1 as partnered streamer</h2>
+                    <p>T1 has signed legendary League of Legends top laner Lee “Flame” Ho-Jong as a content creator and partnered streamer, the organization revealed today on social media.</p>
+                    <p>The former pro brings the roster of the org’s streamers to five, alongside other retired players, including Wolf and Bang, who won several world championships with the team.</p>
+                    <p>Flame ended his eight-year-long player career in 2020 after parting ways with DAMWON Gaming, where he was a substitute top laner for several seasons. He said he would focus on YouTube, streaming, and content creation instead.</p>
+                    <p>After retiring, he has heavily focused on his Twitch channel as a general gaming streamer, which has surpassed 120,000 followers. It’s unclear what kind of content he will create in collaboration with T1 in the future.</p>
+                    <img src="/img/images-news/news-flame.webp" alt="Flame">
+                </div>       
             </div>
-        </section>
-        <div id="home-tournament-anchor"> </div>
-        <section>
-            <h2>TOURNAMENTS</h2>
-            <div class="home-tourn">
-
-                <!-- MSI -->
-
-                <div class="home-tourn-card">
-                    <a href="./page/tournament.html#msi-link"><img src="./img/logo/msi-logo.png"><div class="home-tourn-container">
-                        <h4>MSI</h4>
-                        <p><b>EUROPE</b></p>
-                    </div></a>
-                        
-                    
-                </div>
-
-                <!-- LEC -->
-                <div class="home-tourn-card">
-                    <a href="./page/tournament.html#lec-link"><img src="./img/logo/lec-logo.png"> <div class="home-tourn-container">
-                        <h4>LEC</h4>
-                        <p><b>NORTH AMERICA</b></p>
-                    </div></a>
-                    
-                   
-                </div>
-
-                <!-- ALL STARS -->
-                <div class="home-tourn-card">
-                    <a href="./page/tournament.html#all-stars-link"><img src="./img/logo/all-stars-logo.png"><div class="home-tourn-container">
-                        <h4>All Stars</h4>
-                        <p><b>ASIA</b></p>
-                    </div></a>
-                    
-                    
-                </div>
-
-                <!-- PG -->
-                <div class="home-tourn-card">
-                    <a href="./page/tournament.html#pg-link"><img src="./img/logo/pgnational-logo.png"> <div class="home-tourn-container">
-                        <h4>PG</h4>
-                        <p><b>SOUTH AMERICA</b></p>
-                    </div></a>
-                    
-                   
-                </div>
-
-                <!-- CBLOL -->
-                <div class="home-tourn-card">
-                    <a href="./page/tournament.html#cblol-link"><img src="./img/logo/cblol-logo.png"><div class="home-tourn-container">
-                        <h4>CBLOL</h4>
-                        <p><b>EUROPE</b></p>
-                    </div></a>
-                    
-                    
-                </div>
-
-                <!-- LCK -->
-                <div class="home-tourn-card" id="home-join-anchor">
-                    <a href="./page/tournament.html#lck-link"><img src="./img/logo/korea-logo.png"> <div class="home-tourn-container">
-                        <h4>LCK</h4>
-                        <p><b>ASIA</b></p>
-                    </div></a>
-                    
-                   
-                </div>
-            </div>
-
-            
-            <div class="cta"><a href="./page/tournament.html"><button>Discover more</button></a></div>
-        </section>
-        <section>
-            <div class="home-join-container">
-                <h2>JOIN TOURNAMENT</h2>
-                <p>Compile the form to join one or more LOL tournament</p>
-                <div class="cta" id="home-about-anchor"><a href="./page/join-us.html"><button>Join</button></a></div>
-            </div>
-        </section>
-        <section>
-            <div class="home-about-container">
-                <h2>ABOUT</h2>
-            </div>
-            <div class="home-about-text">
-                <p>The global stage for League of Legends professionals. We organise various tournaments covering
-                    several areas of the world. Our participants compete in exciting challenges and fight to win the
-                    much-acclaimed Champions Trophy.</p>
-            </div>
-            <div class="cta"><a href="./page/about.html"><button>READ MORE</button></a></div>
-        </section>
-        <section id="home-gallery">
-            <img src="./img/cover.png">
-            <video autoplay muted loop id="myVideo">
-                <source src="./img/video.webm" type="video/webm">
-            </video>
-            <div class="home-gallery">
-                <div class="cta"><a href="./page/gallery.html"><button>OPEN MEDIA</button></a></div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
+          
+           
+        </main>
+    
+        <!-- FOOTER -->
     <footer>
         <div class="footer">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -296,7 +143,7 @@
         </div>
     </footer>
 
-    <!-- END OF THE BODY  -->
+    <!-- END OF THE BODY -->
+ 
 </body>
-
 </html>
