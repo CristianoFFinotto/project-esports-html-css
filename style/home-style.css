@@ -4,14 +4,14 @@
 * styling home page
 */
 
-/**MAIN*/
+/* MAIN */
 main {
     margin-top: 50px;
     background-color: #0B132B;
     scroll-behavior: smooth;
 }
 
-/** HERO */
+/* HERO */
 
 .home-hero {
     background: url(../img/hero-hp.jpg);
@@ -48,7 +48,7 @@ h1 {
     }
 }
 
-/**Scroll down icon*/
+/* Scroll down icon */
 .arrows {
 	width: 60px;
 	height: 72px;
@@ -66,20 +66,19 @@ h1 {
 	-webkit-animation: arrow 2s infinite; 
 }
 
-@keyframes arrow
-{
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+@keyframes arrow {
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
 }
 
-@-webkit-keyframes arrow /*Safari and Chrome*/
+@-webkit-keyframes arrow /* Safari and Chrome */
 {
-0% {opacity:0}
-40% {opacity:1}
-80% {opacity:0}
-100% {opacity:0}
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
 }
 
 .arrows path.a1 {
@@ -96,10 +95,6 @@ h1 {
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari Chrome */
 }
-
-
-
-
 
 h2 {
     padding: 10px 20px;
@@ -125,13 +120,12 @@ p {
     padding: 20px 0 20px 0;
 }
 
-.home-hero>p {
+.home-hero > p {
     font-size: 30px;
 }
 
-/**sub menu*/
+/* sub menu */
 .home-sub-menu {
-
     position: sticky;
     top: 50px;
     width: 100%;
@@ -141,24 +135,22 @@ p {
     z-index: 1;
 }
 
-.home-sub-menu>hr {
+.home-sub-menu > hr {
     width: auto;
     color: white;
     border: 1px solid;
 }
 
-.home-sub-menu>a {
+.home-sub-menu > a {
     color: white;
     padding: 3px;
 }
 
-.home-sub-menu>a:link, a:visited {
+.home-sub-menu > a:link, a:visited {
     text-decoration: none;
 }
 
-
 button {
-
     background-color: #2DFDB9;
     border: none;
     color: #0B132B;
@@ -176,7 +168,7 @@ button:hover {
     box-shadow: 0px 1px 4px black;
 }
 
-/**NEWS*/
+/* NEWS */
 
 .home-news {
     padding: 20px;
@@ -191,16 +183,14 @@ button:hover {
     transition: 0.3s;
     width: auto;
     margin-bottom: 20px;
-
 }
 
 .home-news-card:hover {
     box-shadow: 0 18px 16px 0 rgba(0, 0, 0, 0.455);
     cursor: pointer;
-    
 }
 
-.home-news-card>picture>img {
+.home-news-card > picture > img {
     width: 100%;
 }
 
@@ -210,7 +200,7 @@ button:hover {
     background-color: white;
 }
 
-/**TOURNAMNETS*/
+/* TOURNAMNETS */
 
 #home-tournament {
     background-color: #0B132B;
@@ -251,7 +241,7 @@ button:hover {
     color: white;
 }
 
-/**JOIN*/
+/* JOIN */
 #home-join {
     width: 100%;
     position: relative;
@@ -264,16 +254,15 @@ button:hover {
     height: 40vh;
 }
 
-.home-join-container>p {
+.home-join-container > p {
     text-align: center;
     width: 100%;
     padding: 20px;
     font-size: 20px;
     margin-top: 20%;
-
 }
 
-/**ABOUT*/
+/* ABOUT */
 
 #home-about{
     background-color: #1C2541;
@@ -286,7 +275,7 @@ button:hover {
     margin: auto;
 }
 
-/**Gallery*/
+/* Gallery */
 
 #home-gallery {
     background: #0b132b;
@@ -295,7 +284,7 @@ button:hover {
     padding-top: 20px;
 }
 
-#home-gallery>img {
+#home-gallery > img {
     position: absolute;
     width: 71%;
     border: 2px solid #0b132b;
@@ -306,23 +295,18 @@ button:hover {
     background-color: #0B132B;
 }
 
-#home-gallery>video {
+#home-gallery > video {
     width: 100%;
     object-fit: fill;
 }
 
-
-
-/**DESKTOP*/
-
+/* DESKTOP */
 
 @media screen and (min-width: 870px) {
 
-    /**Hero*/
+    /* Hero */
     .home-hero {
-        
         padding-top: 6%;
-        
     }
     
     .hero-logo{
@@ -333,7 +317,8 @@ button:hover {
         font-size: 80px;
     }
 
-    /**NEWS*/
+    /* NEWS */
+
     .home-news {
         padding: 20px;
         display: flex;
@@ -351,28 +336,14 @@ button:hover {
         width: auto;
     }
 
-
-
-  /*   .home-news-card:hover {
-
-        width: 10%;
-
-    } */
-
-    
-
-    /**TOURNAMENTS*/
+    /* TOURNAMENTS */
     .home-tourn {
-
         flex-direction: row;
     }
 
-    /**Join*/
-    .home-join-container>p {
-       
+    /* Join */
+    .home-join-container > p {
         margin-top: 6%;
         font-size: 40px;
-    
     }
-
 }
