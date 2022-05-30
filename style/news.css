@@ -68,8 +68,7 @@
         font-size: 12px;
         text-align: left;
     }
-  }
-
+}
 
   @media only screen and (min-width: 600px) {
     main {
@@ -135,4 +134,4 @@
         font-size: 20px;
         text-align: left;
     }
-  }
+}

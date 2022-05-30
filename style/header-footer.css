@@ -13,7 +13,7 @@ body {
     color: white;
 }
 
-/**HEADER*/
+/* HEADER */
 header,
 nav {
     width: 100%;
@@ -32,23 +32,21 @@ nav {
     padding: 10px;
 }
 
-nav>a>img {
+nav > a > img {
     height: 50px;
     width: 120px;
     padding-left: 7px;
 }
 
-nav>li>svg {
+nav > li > svg {
     width: 40px;
     height: 40px;
     padding-bottom: 20px;
 }
 
-nav>label {
+nav > label {
     margin-left: 20px;
 }
-
-
 
 /* style text into menu */
 
@@ -61,25 +59,21 @@ nav>label {
 }
 
 #primary-menu-list a:hover {
-
     text-shadow: 2px 4px 0px black;
     color: #2DFDB9;
 }
 
 #primary-menu-list a.join {
-
     color: #2DFDB9;
 }
 
-nav>ul>li:last-child {
+nav > ul > li:last-child {
     padding-top: 40px;
 }
 
-nav>ul>li {
+nav > ul > li {
     padding-bottom: 20px;
 }
-
-/**************** HOMEPAGE SMARTPHONE *****************/
 
 #primary-menu-list {
     display: none;
@@ -93,7 +87,6 @@ nav>ul>li {
 
 #menu-hamburger:hover {
     cursor: pointer;
-
 }
 
 .stick {
@@ -111,16 +104,16 @@ nav>ul>li {
 
 /* after click hamburger transform into a cross */
 
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(1) {
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger .stick:nth-child(1) {
     display: none;
 }
 
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(2) {
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger .stick:nth-child(2) {
     transform: rotate(-45deg);
     margin-bottom: 12px;
 }
 
-#menu-hamburger-toggler:checked~header nav #menu-hamburger .stick:nth-child(3) {
+#menu-hamburger-toggler:checked ~ header nav #menu-hamburger .stick:nth-child(3) {
     transform: rotate(45deg);
     margin-top: -18px;
 }
@@ -137,10 +130,9 @@ nav>ul>li {
     }
 }
 
-
 /* show primary menu after click hamburger */
 
-#menu-hamburger-toggler:checked~header nav #primary-menu-list {
+#menu-hamburger-toggler:checked ~ header nav #primary-menu-list {
     position: absolute;
     top: 50px;
     width: 100%;
@@ -153,17 +145,17 @@ nav>ul>li {
     animation: fadeIn 700ms;
 }
 
-#menu-hamburger-toggler:checked~main, #menu-hamburger-toggler:checked~footer {
+#menu-hamburger-toggler:checked ~ main, #menu-hamburger-toggler:checked ~ footer {
     visibility: hidden;
 }
 
-/**FOOTER*/
+/* FOOTER */
 .footer-svg {
     width: 50px;
     margin: auto;
 }
 
-.footer-svg>svg {
+.footer-svg > svg {
     width: 50px;
     fill: white;
 }
@@ -179,8 +171,7 @@ footer {
     background: #0b132b;
 }
 
-.footer>svg {
-
+.footer > svg {
     position: absolute;
     bottom: -1px;
     width: 100%;
@@ -202,12 +193,12 @@ footer {
     text-align: center;
 }
 
-.footer-content>.link>h2>a:link, a:visited {
+.footer-content > .link > h2 > a:link, a:visited {
     color: white;
     text-decoration: none;
 }
 
-.footer-content>.link>h2>a:hover{
+.footer-content > .link > h2 > a:hover{
     color: #2DFDB9;
 }
 
@@ -218,7 +209,7 @@ footer {
     background: #1c2541;
 }
 
-.social-footer>a {
+.social-footer > a {
     padding: 20px;
 }
 
@@ -229,7 +220,7 @@ footer {
 
 @media screen and (min-width: 870px) {
 
-    /**MENU*/
+    /* MENU */
 
     nav {
         flex-direction: row;
@@ -251,13 +242,11 @@ footer {
         width: 100%;
     }
 
-
-
-    nav>ul>li:last-child {
+    nav > ul > li:last-child {
         display: none;
     }
 
-    nav>ul>li {
+    nav > ul > li {
         padding-bottom: 0px;
     }
 }
