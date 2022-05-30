@@ -72,12 +72,13 @@ main .tournament-button:hover {
 }
 
 .team{
-   
     padding: 2%;
     width: 100%;
     margin: 6% auto 6% auto;
-    background: rgb(144, 124, 28);
+    background: #2DFDB9;
+    color: black;
 }
+
 .player-container{
     background: white;
     color: black;
@@ -101,7 +102,7 @@ main .tournament-button:hover {
 
 .player img{
     width: 100px;
-    box-shadow: -4px 6px 6px #907c1c;
+    box-shadow: -4px 6px 6px #2DFDB9;
 }
 
 .allign{
@@ -113,6 +114,7 @@ main .tournament-button:hover {
     .team{
         width: 80%;
     }
+
     .player{
         font-size: 20px;
     }
