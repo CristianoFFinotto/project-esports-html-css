@@ -112,7 +112,8 @@ main .section-1 a:visited {
 
 main .section-1 .container__div:hover .container-info {
     height: 100%;
-    background: #2dfdb82a;
+    background: #2dfdb880;
+    color: black;
 }
 
 @media only screen and (max-width: 1200px) {

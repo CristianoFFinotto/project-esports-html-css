@@ -260,7 +260,7 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 40vh;
+    height: 45vh;
     color: white;
     ;
 }
@@ -299,6 +299,7 @@ p {
     position: absolute;
     width: 71%;
     border: 2px solid #0b132b;
+    margin-bottom: 30px;
 }
 
 .home-gallery {
